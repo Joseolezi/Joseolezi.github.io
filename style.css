@@ -1,4 +1,5 @@
-/* <uniquifier>: Use a unique and descriptive class name
+/* Acerca de la fuente Work Sans: https://fonts.google.com/specimen/Work+Sans?query=work+sans 
+    <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900*/
 
 /* PALETA
@@ -53,13 +54,14 @@
     }
   }
 
+
 /* Estilo para el html */	
 
   html {
     scroll-behavior:smooth;
   }
 
-/* Estilo container */
+/* Estilo de containers */
 
 .header-container {
     
@@ -105,13 +107,11 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    overflow: clip; width: 100%;
-    height: 100%;
+    overflow: clip;
+    width: 100%;
     padding: 0rem;
     margin: 0rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+
     border-radius: 0rem;
     
     -webkit-animation: zoomIn, desenfocar linear;
@@ -338,18 +338,20 @@ li:hover {
     border-radius: 0.1rem;
     text-align: center;
     line-height: 1.5rem;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+
+.sec1 li:hover {
+    background: rgb(255,252,196);
+    background: linear-gradient(158deg, rgba(255,252,196,1) 0%, rgba(255,167,249,1) 100%);
+    scale: 1.1;
+    
 }
 
 .sec1 li p {
-    text-align: center;
-    
+    text-align: center;    
 }
 
-/* Estilo para la main image */
-.main-image {
-    margin: 0rem;
-    scale: 0.1;
-    position:absolute;
-    
-}
+
 
