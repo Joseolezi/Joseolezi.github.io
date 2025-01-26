@@ -387,13 +387,13 @@ li:hover {
     transition: ease;
     transition-duration: 0.5s;
     cursor:default;
-    max-height: fit-content
+    max-height: min-content
     
 }
 
 .sec1 li:hover {
     background: var(--higlight-gradient);
-    font-size: large;
+    
     
   
     
