@@ -374,12 +374,13 @@ li:hover {
     line-height: 1.5rem;
     transition: ease;
     transition-duration: 0.5s;
+    cursor:default;
 }
 
 .sec1 li:hover {
     background: var(--higlight-gradient);
-    scale: 1.1;
-    cursor:default;
+    scale: 1.04;
+  
     
 }
 
