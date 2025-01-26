@@ -278,8 +278,8 @@ p {
     text-align:justify;
     margin-top: 0.1rem;
     margin-bottom: 0.5rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
     line-height: 1.5;
@@ -342,7 +342,7 @@ li:hover {
     text-align: center;
     line-height: 0.5rem;
 
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 10rem;
     
     /* -webkit-animation: fadeIn ease;
     animation: fadeIn ease;
@@ -358,8 +358,7 @@ li:hover {
     height: min-content;
     align-items: center;
     text-align: center;
-    display:inline-block;
-
+ 
 
 }
 
@@ -376,12 +375,11 @@ li:hover {
 .sec1 li {
     
     background: var(--primary-gradient);
-    max-width: 60rem;
     padding: 0rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-right: 4rem;
-    margin-left: 4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     border: 0.01rem solid var(--primary-txt-color);
     border-radius: 0.1rem;
     text-align: center;
@@ -389,11 +387,14 @@ li:hover {
     transition: ease;
     transition-duration: 0.5s;
     cursor:default;
+    max-height: fit-content
+    
 }
 
 .sec1 li:hover {
     background: var(--higlight-gradient);
-    scale: 1.1;
+    font-size: large;
+    
   
     
 }
