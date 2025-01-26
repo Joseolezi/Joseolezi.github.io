@@ -323,14 +323,19 @@ li:hover {
 .sec0   {
 
     background: linear-gradient(158deg, rgb(202, 255, 223) 0%, rgb(202, 233, 253) 100%); 
-    padding: 2rem;
-    margin: 3rem;
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     border: 0.15rem solid #075300;
     border-radius: 5rem;
     text-align: center;
     line-height: 0.5rem;
 
-    scroll-margin-top: 11rem;
+    scroll-margin-top: 8rem;
     
     /* -webkit-animation: fadeIn ease;
     animation: fadeIn ease;
@@ -342,7 +347,7 @@ li:hover {
 
 .sec1 {
 
-    scroll-margin-top: 10rem;
+    scroll-margin-top: 8rem;
     height: min-content;
 
 }
