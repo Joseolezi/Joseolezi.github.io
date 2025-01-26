@@ -333,9 +333,10 @@ li:hover {
 
     scroll-margin-top: 11rem;
     
-    -webkit-animation: fadeIn ease;
+    /* -webkit-animation: fadeIn ease;
     animation: fadeIn ease;
     animation-timeline: view();
+    */
       
     
 }
