@@ -17,7 +17,7 @@
 */
 
 
-/* ANIMATIONS */
+/* ANIMATIONS and root*/
 
 @keyframes animate-in {
     from {
@@ -57,6 +57,22 @@
     }
   }
 
+:root{
+    --CatPolygreen: #283d1e;
+    --Light-yellow: #fcffdf;
+    --Plum: #ffa0ef;
+    --Aquamarine: #c1ffe4;
+
+
+    --primary-txt-color: var(--CatPolygreen);
+    --primary-bg-color: var(--Light-yellow);
+    --hover-color: var(--Light-yellow);
+    --highlight-color: var(--Plum);
+    --primary-gradient: linear-gradient(158deg, rgb(202, 255, 223) 0%, rgb(202, 233, 253) 100%); 
+    --higlight-gradient: linear-gradient(158deg, rgba(255,252,196,1) 0%, rgba(255,167,249,1) 100%);
+
+
+}
 
 /* Estilo para el html */	
 
@@ -76,7 +92,7 @@
   /* Estilo para el cuerpo de la página */
 
 header {
-    background-color: #fcffdf;
+    background-color: var(--primary-bg-color);
     padding: 0rem;
     margin: 0rem;
     top: 0;
@@ -90,13 +106,14 @@ header {
 body {
     
     font-family: Work Sans, sans-serif;
-    background: #fcffdf;
+    background: var(--primary-bg-color);
     margin: 0rem;
     position: relative;
     text-align: center;
     line-height: 0.5;
     font-weight:normal;
     font-style: normal;
+    cursor: default;
 }
 
 /* Estilo del header */
@@ -136,7 +153,7 @@ body {
 .header h1 {
     
     font-style: normal;
-    color: #283d1e;
+    color: var(--primary-txt-color);
     padding-top: 1rem;
     padding-bottom: 0rem;
     margin: 0rem;
@@ -147,7 +164,7 @@ body {
 .header h3 {
     
     font-style:normal;
-    color: #283d1e;
+    color: var(--primary-txt-color);
     padding-top: 0rem;
     margin: 0rem;
     text-align: center;
@@ -176,8 +193,8 @@ body {
     
 }
 .navbar a {
-    background-color: #283d1e;
-    color: #fcffdf;
+    background-color: var(--primary-txt-color);
+    color: var(--primary-bg-color);
     line-height: 1.5rem;
     min-width: 15rem;
     min-height: 1.5rem;
@@ -189,14 +206,14 @@ body {
 }
 
 .navbar a:hover {
-    color: #000000;
+    color: var(--primary-txt-color);
     background-color: #fcffd1;
     
 }
 
 .navbar a:active {
-    color: #000000;
-    background-color: #ffa0ef;
+    color: var(--primary-txt-color);
+    background-color: var(--highlight-color);
     
 }
 
@@ -209,7 +226,7 @@ body {
 
 /* Estilo para h */
 h1 {
-    color: #2C302E;
+    color: var(--primary-txt-color);
     font-size: 2em;
     text-align: center;
     padding-top: 0rem;
@@ -220,7 +237,7 @@ h1 {
 }
 
 h2 {
-    color: #075836;
+    color: var(--primary-txt-color);
     font-size: 200%;
     text-align: center;
     padding-top: 0rem;
@@ -228,7 +245,7 @@ h2 {
 }
 
 h3 {
-    color: #272727;
+    color: var(--primary-txt-color);
     text-align: center;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
@@ -237,7 +254,7 @@ h3 {
 }
 
 h4 {
-    color: #2C302E;
+    color: var(--primary-txt-color);
     text-align: center;
     padding: 0rem 0rem;
 }
@@ -245,7 +262,7 @@ h4 {
 /* h5 es usado para los autores de las citas */
 
 h5 {
-    color: #474A48;
+    color: var(--primary-txt-color);
     text-align: center;
     font-style: bold italic;
     padding: 0rem 0rem;
@@ -253,7 +270,7 @@ h5 {
 
 /* Estilo para los párrafos */
 p {
-    color: #474A48;
+    color: var(--primary-txt-color);
     text-align:justify;
     margin: 1rem 1rem;
     padding-top: 0rem;
@@ -267,53 +284,36 @@ p {
 
 q {
     text-align: center;
-    color: #2C302E;
+    color: var(--primary-txt-color);
     font-style: italic;
     line-height: 1;
 }
 
 /* Estilo para los enlaces */
 a {
-    color: #2C302E;
+    color: var(--primary-txt-color);
     text-decoration: none;
     text-align: center;
     margin:  0rem 0rem;
     cursor: pointer;
     transition: ease-in
-}
+}   
 
-b {
-    color: #2C302E;
-    text-align: center;
-    text-decoration: none;
-    padding:  0rem 0rem;
-    
-}
 
 a:hover {
-    color:#ffffff;
-    
-}
-
-b:hover {
-    color:#4e5000;
-    
-}
-/* Estilo para el icono de menú */
-menu-logo-link  {
-    color:#8D91C7;
+    color:var(--primary-bg-color);
     
 }
 
 li {
-    color: #2e2e2e;
+    color: var(--primary-txt-color);
     text-align: center;
     list-style-type: none;
     
 }
 
 li:hover {
-    color: #000000
+    color: var(--primary-txt-color);
 }
 
 
@@ -322,7 +322,7 @@ li:hover {
 
 .sec0   {
 
-    background: linear-gradient(158deg, rgb(202, 255, 223) 0%, rgb(202, 233, 253) 100%); 
+    background: var(--primary-gradient);
     padding: 0.5rem;
     padding-top: 1.5rem;
     padding-bottom: 0rem;
@@ -330,7 +330,7 @@ li:hover {
     margin-bottom: 0rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
-    border: 0.15rem solid #075300;
+    border: 0.15rem solid var(--primary-txt-color);
     border-radius: 5rem;
     text-align: center;
     line-height: 0.5rem;
@@ -353,7 +353,7 @@ li:hover {
 }
 
 .sec1 h3 {
-    color: #2C302E;
+    color: var(--primary-txt-color);
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -364,12 +364,11 @@ li:hover {
 /* Estilo para sec1 */	
 .sec1 li {
     
-    background: linear-gradient(158deg, rgb(202, 255, 223) 0%, rgb(202, 233, 253) 100%); 
-    
-    
+    background: var(--primary-gradient);
+
     padding: 0rem;
     margin: 2rem;
-    border: 0.01rem solid #2C302E;
+    border: 0.01rem solid var(--primary-txt-color);
     border-radius: 0.1rem;
     text-align: center;
     line-height: 1.5rem;
@@ -378,15 +377,13 @@ li:hover {
 }
 
 .sec1 li:hover {
-    background: rgb(255,252,196);
-    background: linear-gradient(158deg, rgba(255,252,196,1) 0%, rgba(255,167,249,1) 100%);
+    background: var(--higlight-gradient);
     scale: 1.1;
+    cursor:default;
     
 }
 
 .sec1 li p {
     text-align: center;    
 }
-
-
 
