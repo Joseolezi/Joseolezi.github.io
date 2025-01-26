@@ -354,12 +354,12 @@ li:hover {
 
 .sec1 {
 
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 6rem;
     height: min-content;
     align-items: center;
     text-align: center;
     display:inline-block;
-    overflow: hidden;
+
 
 }
 
