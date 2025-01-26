@@ -343,6 +343,8 @@ li:hover {
 .sec1 {
 
     scroll-margin-top: 10rem;
+    min-height: 30rem;
+    max-height: 30rem;
 
 }
 
