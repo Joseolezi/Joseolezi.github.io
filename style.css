@@ -372,34 +372,65 @@ li:hover {
 }
 
 /* Estilo para sec1 */	
-.sec1 li {
-    
-    background: var(--primary-gradient);
-    padding: 0rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    border: 0.01rem solid var(--primary-txt-color);
-    border-radius: 0.1rem;
-    text-align: center;
-    line-height: 1.5rem;
-    transition: ease;
-    transition-duration: 0.5s;
-    cursor:default;
-    max-height: min-content
-    
-}
 
+@media (hover: hover) and (pointer: fine) {
+ 
+    .sec1 li {
+    
+        background: var(--primary-gradient);
+        padding: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 6rem;
+        margin-left: 6rem;
+        border: 0.01rem solid var(--primary-txt-color);
+        border-radius: 0.1rem;
+        text-align: center;
+        line-height: 1.5rem;
+        transition: ease;
+        transition-duration: 0.5s;
+        cursor:default;
+        max-height: min-content;
+    } }
+
+    
+@media (hover:not(hover)) and (pointer: fine) {
+ 
+    .sec1 li {
+    
+        background: var(--primary-gradient);
+        padding: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        border: 0.01rem solid var(--primary-txt-color);
+        border-radius: 0.1rem;
+        text-align: center;
+        line-height: 1.5rem;
+        transition: ease;
+        transition-duration: 0.5s;
+        cursor:default;
+        max-height: min-content;
+    } }
+
+
+
+    
+
+@media (hover: hover) and (pointer: fine) {
+ 
 .sec1 li:hover {
     background: var(--higlight-gradient);
-    
-    
-  
-    
-}
+    scale: 1.1;
+} }
 
 .sec1 li p {
-    text-align: center;    
+    text-align: center;        
 }
 
+@media (hover:not(hover)) and (pointer: fine) {
+    .sec1 li p {
+        text-align: center;
+        color:#ffa0ef    
+    }}
