@@ -414,20 +414,16 @@ li:hover {
         max-height: min-content;
     } }
 
-
-
-    
-
 @media (hover: hover) and (pointer: fine) {
  
 .sec1 li:hover {
     background: var(--higlight-gradient);
     scale: 1.1;
 } }
-
+@media (hover: hover) and (pointer: fine) {
 .sec1 li p {
     text-align: center;        
-}
+}}
 
 @media (hover:not(hover)) and (pointer: fine) {
     .sec1 li p {
