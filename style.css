@@ -445,10 +445,17 @@ li {
    
 }
 
+.sec2scroll h1 {
+
+    padding-top: 4rem;
+
+}
+
 .sec2scroll {
     scroll-margin-top: 6rem;
 }
 
 .ag {
-margin-top: 8rem;
+margin-top: 0rem;
+min-height: min-content;
 }
