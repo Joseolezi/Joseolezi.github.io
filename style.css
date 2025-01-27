@@ -332,7 +332,7 @@ li:hover {
 
 /* Estilo para sec0 */	
 
-.sec0   {
+.Inicio   {
 
     background: var(--primary-gradient);
     padding: 0.5rem;
@@ -357,8 +357,8 @@ li:hover {
     
 }
 
-/* Estilo para sec1 */	
-.sec1 {
+/* Estilo para Consulta */	
+.Consulta {
 
     scroll-margin-top: 9rem;
     height: min-content;
@@ -368,7 +368,7 @@ li:hover {
 
 }
 
-.sec1 h3 {
+.Consulta h3 {
     color: var(--primary-txt-color);
     text-align: center;
     padding-top: 2rem;
@@ -381,7 +381,7 @@ li:hover {
 
 @media (hover: hover) and (pointer: fine) {
  
-    .sec1 li {
+    .Consulta li {
     
         background: var(--primary-gradient);
         padding: 0rem;
@@ -402,13 +402,13 @@ li:hover {
 
 @media (hover: hover) and (pointer: fine) {
  
-.sec1 li:hover {
+.Consulta li:hover {
     background: var(--higlight-gradient);
     scale: 1.1;
     
 } }
 
-    .sec1 li p {
+    .Consulta li p {
         text-align: center;
          
     }
