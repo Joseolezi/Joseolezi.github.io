@@ -435,9 +435,9 @@ li {
 /*Estilo de la agenda*/
 
 .sec2 {
-    scroll-margin-top: 12rem;
+    scroll-margin-top: 4rem;
     
-    margin-left: 5rem;
+    margin-left: 8rem;
     margin-right: 5rem;
     justify-content: center;
     height: auto;
