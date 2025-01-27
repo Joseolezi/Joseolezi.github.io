@@ -65,6 +65,7 @@
 
 
     --primary-txt-color: var(--CatPolygreen);
+    --secondary-txt-color: #004f63;
     --primary-bg-color: var(--Light-yellow);
     --hover-color: var(--Light-yellow);
     --highlight-color: var(--Plum);
@@ -164,7 +165,7 @@ body {
 .header h3 {
     
     font-style:normal;
-    color: var(--primary-txt-color);
+    color: var(--secondary-txt-color);
     padding-top: 0rem;
     margin: 0rem;
     text-align: center;
