@@ -60,15 +60,16 @@
 :root{
     --CatPolygreen: #283d1e;
     --Light-yellow: #fcffdf;
-    --Plum: #ffa0ef;
+    --Pink-lavender: #ffcaf6;
     --Aquamarine: #c1ffe4;
+    --Serene-blue: #0b5a6e;
+    --Nature-green: #009600;
 
-
-    --primary-txt-color: var(--CatPolygreen);
+    --primary-txt-color: var(--Serene-blue);
     --secondary-txt-color: #004f63;
     --primary-bg-color: var(--Light-yellow);
     --hover-color: var(--Light-yellow);
-    --highlight-color: var(--Plum);
+    --highlight-color: var(--Pink-lavender);
     --primary-gradient: linear-gradient(158deg, rgb(202, 255, 223) 0%, rgb(202, 233, 253) 100%); 
     --higlight-gradient: linear-gradient(158deg, rgba(255,252,196,1) 0%, rgba(255,167,249,1) 100%);
 
@@ -158,6 +159,7 @@ body {
     padding-top: 1rem;
     padding-bottom: 0rem;
     margin: 0rem;
+    margin-bottom: 0.2rem;
     font-weight: 1em;
     font-size: 2em;
     line-height: 1;
@@ -165,12 +167,13 @@ body {
 .header h3 {
     
     font-style:normal;
-    color: var(--secondary-txt-color);
+    color: var(--primary-txt-color);
     padding-top: 0rem;
     margin: 0rem;
     text-align: center;
-    font-weight: 2em;
+    font-weight: normal;
     font-size: 1.2em;
+    text-decoration:overline;
 }
 
 /** navbar style **/
@@ -222,6 +225,7 @@ body {
 .navbar li {
     display:ruby;
     float:none;
+    border-width: 0;
 }
 
 
