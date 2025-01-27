@@ -430,3 +430,32 @@ li {
   
     
 }
+
+
+/*Estilo de la agenda*/
+
+.sec2 {
+    scroll-margin-top: 12rem;
+    
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: center;
+    height: auto;
+    overflow:hidden;
+    object-fit: cover;
+object-position: bottom;
+overflow: hidden;
+position: relative;
+}
+
+.ag {
+
+border: 0;
+width: 100%;
+height: 38rem;
+
+object-fit: cover;
+object-position: 50% 50%;
+overflow: hidden;
+
+}
