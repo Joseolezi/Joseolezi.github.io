@@ -440,25 +440,28 @@ li {
     margin-right: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-   
+   padding: 1rem;
     overflow:hidden;
    
 }
 
-.sec2scroll h1 {
+.agenda h1 {
 
-    padding-top: 4rem;
+    padding-top: 6rem;
 
 }
 
-.sec2scroll {
-    scroll-margin-top: 6rem;
+.agenda {
+    scroll-margin-top: 8rem;
 }
 
 .ag {
+width: 100%;
+background: white;
+border: 0.5rem solid var(--primary-txt-color);
 margin: 0rem;
 padding: 0;
-min-height: 100rem;
+min-height: 55rem;
 max-height: none;
 background-color: var(--primary-gradient);
 
