@@ -436,10 +436,10 @@ li {
 
 .sec2 {
     scroll-margin-top: 8rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
    
     overflow:hidden;
    
@@ -456,8 +456,10 @@ li {
 }
 
 .ag {
-margin-top: 0rem;
+margin: 0rem;
+padding: 0;
 min-height: 100rem;
 max-height: none;
 background-color: var(--primary-gradient);
+
 }
