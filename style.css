@@ -53,9 +53,23 @@
       filter: blur(0rem);
     }
     to {
-      filter: blur(2rem);
+      filter: blur(8rem);
     }
   }
+
+@keyframes slideIn {
+    0.01% {
+        transform: translateX(20rem);
+        opacity: 0;
+    }
+    0.02% {
+        trasnform: translateX(0rem);
+     
+    }
+    100% {transform: translateX(0rem);
+        opacity: 1;
+    }
+}
 
 :root{
     --CatPolygreen: #283d1e;
@@ -211,13 +225,13 @@ body {
 
 .navbar a:hover {
     color: var(--primary-txt-color);
-    background-color: #fcffd1;
+    background-color: var(--highlight-color);
     
 }
 
 .navbar a:active {
-    color: var(--primary-txt-color);
-    background-color: var(--highlight-color);
+    color: var(--primary-bg-color);
+    
     
 }
 
@@ -299,6 +313,14 @@ q {
     color: var(--primary-txt-color);
     font-style: italic;
     line-height: 1;
+    transition-duration: 0.5s;
+    cursor: pointer;
+   
+}
+
+q:hover {
+    color: var(--highlight-color);
+    
 }
 
 /* Estilo para los enlaces */
@@ -346,7 +368,9 @@ li:hover {
     border-radius: 2rem;
     text-align: center;
     line-height: 0.5rem;
-
+    max-height: min-content;
+    align-items: center;
+    text-align: center;
     scroll-margin-top: 10rem;
     
     /* -webkit-animation: fadeIn ease;
@@ -364,7 +388,7 @@ li:hover {
     height: min-content;
     align-items: center;
     text-align: center;
- 
+    overflow-x: clip;
 
 }
 
@@ -397,6 +421,12 @@ li:hover {
         transition-duration: 0.5s;
         cursor:default;
         max-height: min-content;
+        cursor: zoom-in;
+        -webkit-animation: slideIn linear;
+        animation: slideIn linear;
+        animation-timeline: view(block 95% auto);
+        transform: translateX(0%);
+        
     } }
 
 
@@ -424,10 +454,14 @@ li {
     border-radius: 0.1rem;
     text-align: center;
     line-height: 1.5rem;
-    transition: ease;
+    transition: ease-out;
     transition-duration: 0.5s;
     cursor:default;
-  
+    animation-duration: 0.1;
+    -webkit-animation: slideIn linear;
+    animation: slideIn linear;
+    animation-timeline: slideIn view(block 80% auto);
+
     
 }
 
@@ -445,24 +479,100 @@ li {
    
 }
 
-.agenda h1 {
+.Agenda h1 {
 
     padding-top: 6rem;
 
 }
 
-.agenda {
+.Agenda {
     scroll-margin-top: 8rem;
 }
 
 .ag {
 width: 100%;
-background: white;
+background-color: white;
 border: 0.5rem solid var(--primary-txt-color);
 margin: 0rem;
 padding: 0;
 min-height: 55rem;
 max-height: none;
-background-color: var(--primary-gradient);
 
+}
+
+/* E-mail format */
+
+.formContainer {
+    background-color: white                                                                          ;
+    border: 0.2rem solid var(--primary-txt-color);
+    width: 50%; 
+    margin: 4rem auto;
+    padding: 0rem;
+    overflow: clip;
+  
+}
+
+.formContainer h3 { 
+    color: var(--primary-txt-color);
+    padding-top: 0rem;
+    margin: rem auto;
+}
+.formContainer input {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 0.2rem solid var(--primary-txt-color);
+    display: block;
+    font-size: normal; 
+    outline: none; 
+}
+.formContainer select {
+    width: 50%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.formContainer textarea {
+    width: 90%;
+    height: 6rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-color: var(--primary-txt-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    resize: none;
+}
+.formContainer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+}
+.btn {
+    border: none !important;
+    cursor: pointer; 
+    background-color: var(--primary-txt-color);
+    color: var(--primary-bg-color);
+    margin: 2rem, auto;
+    padding: auto;
+    font-size: normal; 
+    width: 8rem;
+    height: 2rem;
+    text-align: center;
+    float: center;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    color: var(--primary-txt-color);
+    background-color: var(--highlight-color);
+}
+.btn:active {
+    color: var(--primary-bg-color);
+    
 }

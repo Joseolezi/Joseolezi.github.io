@@ -14,7 +14,7 @@
     <script src="main.js"></script>
     
 </head>
-
+ 
 
 <body>
     
@@ -27,7 +27,7 @@
                 <ul>
                     <li><a href= "#Inicio">Inicio</a></li>
                     <li><a href="#Consulta">Consulta</a></li>
-                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#Agenda">Agenda</a></li>
                 </ul>
         </nav>
 
@@ -38,23 +38,30 @@
         </a>
 
             <section class="Inicio" id="Inicio">
-                <q>No busques ser perfecto, busca ser feliz.</q>
-                <h5>Albert Ellis</h5>
-                <br /><br />            
-                <q>Nuestras cicatrices nos hacen saber que nuestro pasado fue real</q>
-                <h5>Jane Austen</h5>
-                <br /><br />
-                <q>La vida es aquello que te va sucediendo mientras te empeñas en hacer otros planes.</q>
-                <h5>John Lennon</h5>
-                <br /><br />
-                <q>Si siempre haces lo que siempre has hecho, siempre obtendrás lo que siempre has tenido.</q>
-                <h5>Steven Hayes</h5>
-                <br /><br />
-                <q>Un campeón no se define por sus victorias, sino por la cantidad de veces que se recupera cuando cae.</q>
-                <h5>Serena Williams</h5>
-                <br /><br />
-                <q>Nuestro modo de pensar determina en gran medida si alcanzaremos nuestros objetivos y disfrutaremos de la vida.</q>
-                <h5>Aaron Beck</h5>
+                <a href="https://es.wikipedia.org/wiki/Albert_Ellis" target="_blank">
+                    <q>No busques ser perfecto, busca ser feliz.</q>
+                </a>
+                        <h5>Albert Ellis</h5>
+                    <br /><br />
+                <a href="https://es.wikipedia.org/wiki/Elizabeth_Loftus" target="_blank">
+                    <q>La memoria, como la libertad, es algo frágil.</q>
+                </a>
+                        <h5>Elizabeth Loftus</h5>
+                                            <br /><br />
+                <a href="https://es.wikipedia.org/wiki/Steven_C._Hayes" target="_blank">
+                    <q>Si siempre haces lo que siempre has hecho, siempre obtendrás lo que siempre has tenido.</q>
+                </a>
+                        <h5>Steven C. Hayes</h5>
+                    <br /><br />            
+                <a href="https://es.wikipedia.org/wiki/Margaret_Floy_Washburn" target="_blank">
+                    <q>Nada en el mundo es tan atractivo para las emociones como la mente de otro ser humano.</q>
+                </a>
+                        <h5>Margaret Floy Washburn</h5>
+                    <br /><br />
+                <a href="https://es.wikipedia.org/wiki/Aaron_T._Beck" target="_blank">
+                    <q>Nuestro modo de pensar determina en gran medida si alcanzaremos nuestros objetivos y disfrutaremos de la vida.</q>
+                </a>
+                        <h5>Aaron Beck</h5>
             </section>  
         
         <section class="Consulta" id="Consulta">
@@ -74,7 +81,7 @@
 
             
         </section>
-        <div class= "agenda" id="agenda">
+        <div class= "Agenda" id="Agenda">
             <h1>Agenda</h1>
         </div>
     <section class="sec2" id="sec2">
@@ -88,7 +95,35 @@
          </sec2>
 
     <!-- space to debug anchor links //style="border: 0px none; margin-left: 0.5rem; margin-right: 0.5rem; height: 45rem; margin-top: -230px; width: 100%;"-->
-    <p>next</p> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    
+    <div class="formContainer id=formContainer">
+        <h3>Email: jose.fandos.pgs@gmail.com</h3>
+            <form onsubmit="emailSend(); reset(); return false;">
+                <input type="text" name="nombre" placeholder="Nombre y apellidos*" required>
+                <input type="text" name="Email" placeholder="Email*" required>
+                <input type="text" name="Tel" placeholder="Teléfono">
+               Asunto: <select name="motivo">
+                    <option>Mensaje</option>
+                    <option>Solicitud de información</option>
+                    <option>Modificar/cancelar cita</option>
+                    <option>Propuesta comercial</option>
+                    <option>Urgencia</option>
+                    <option>Otro</option>
+                </select>
+                <textarea name="Mensaje" placeholder="Mensaje*" required></textarea>
+                <button class="btn" id="btn" type="submit"> Enviar Email</button>
+            </form>
+        </div>
+        <script src="main.js"></script>
+                    
+                
+            </form>
+    
+    
+    
+    
+    
+    <p>html</p> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
