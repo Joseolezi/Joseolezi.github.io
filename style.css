@@ -58,12 +58,9 @@
   }
 
 @keyframes slideIn {
-    0.01% {
+    1% {
         transform: translateX(20rem);
         opacity: 0;
-    }
-    0.02% {
-        trasnform: translateX(0rem);
      
     }
     100% {transform: translateX(0rem);
@@ -179,7 +176,7 @@ body {
     line-height: 1;
 }
 .header h3 {
-    
+    font-variant: small-caps;
     font-style:normal;
     color: var(--primary-txt-color);
     padding-top: 0rem;
@@ -364,7 +361,7 @@ li:hover {
     margin-bottom: 4rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
-    border: 0.15rem solid var(--primary-txt-color);
+    border: 0.15rem dotted var(--primary-txt-color);
     border-radius: 2rem;
     text-align: center;
     line-height: 0.5rem;
@@ -422,10 +419,11 @@ li:hover {
         cursor:default;
         max-height: min-content;
         cursor: zoom-in;
-        -webkit-animation: slideIn linear;
-        animation: slideIn linear;
-        animation-timeline: view(block 95% auto);
-        transform: translateX(0%);
+        -webkit-animation: slideIn ease-in;
+        animation: slideIn ease-in;
+        animation-duration: 0.2;
+        animation-timeline: view(block 80% auto);
+        
         
     } }
 
@@ -492,7 +490,7 @@ li {
 .ag {
     width: 100%;
     background-color: white;
-    border: 0.5rem solid var(--primary-txt-color);
+    border: 0.5rem groove var(--primary-txt-color);
     margin: 0rem;
     padding: 0;
     min-height: 55rem;
