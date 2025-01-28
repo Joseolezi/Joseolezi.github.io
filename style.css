@@ -470,11 +470,11 @@ li {
 
 .sec2 {
     scroll-margin-top: 8rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-   padding: 1rem;
+    padding: 1rem;
     overflow:hidden;
    
 }
@@ -490,13 +490,13 @@ li {
 }
 
 .ag {
-width: 100%;
-background-color: white;
-border: 0.5rem solid var(--primary-txt-color);
-margin: 0rem;
-padding: 0;
-min-height: 55rem;
-max-height: none;
+    width: 100%;
+    background-color: white;
+    border: 0.5rem solid var(--primary-txt-color);
+    margin: 0rem;
+    padding: 0;
+    min-height: 55rem;
+    max-height: none;
 
 }
 
@@ -505,7 +505,7 @@ max-height: none;
 .formContainer {
     background-color: white                                                                          ;
     border: 0.2rem solid var(--primary-txt-color);
-    width: 50%; 
+    width: 100%; 
     margin: 4rem auto;
     padding: 0rem;
     overflow: clip;
@@ -515,14 +515,14 @@ max-height: none;
 .formContainer h3 { 
     color: var(--primary-txt-color);
     padding-top: 0rem;
-    margin: rem auto;
+    margin: 1rem auto;
 }
 .formContainer input {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    width: 90%;
+    width: 95%;
     padding: 0.5rem;
     border: none;
     border-bottom: 0.2rem solid var(--primary-txt-color);
@@ -536,14 +536,18 @@ max-height: none;
     cursor: pointer;
 }
 .formContainer textarea {
-    width: 90%;
+    width: 95%;
     height: 6rem;
-    margin: 1rem auto;
-    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: none;
     border-color: var(--primary-txt-color);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
-    resize: none;
+    
+
 }
 .formContainer p {
     font-family: Arial, Helvetica, sans-serif;
