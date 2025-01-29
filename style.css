@@ -97,6 +97,8 @@
         158deg, rgba(255,252,196,1) 0%, rgba(255,167,249,1) 100%);
     --vertical-ltod-gradient: linear-gradient(
         0deg, #6cc4ff 0%, rgba(213,228,205,1) 75%, rgba(252,255,223,1) 100%);
+    --vertical-dtol-gradient: linear-gradient(
+        0deg, rgba(252,255,223,1)0%, #6cc4ff 75%,  #6cc4ff 100%);
     --primary-dark-gradient: linear-gradient(
         0deg, rgb(0, 88, 110) 0%, rgb(224, 0, 206) 100%);
     --black-grey-gradient:(
@@ -239,6 +241,7 @@ body {
     
 }
 .navbar a {
+    
     background-color: var(--primary-txt-color);
     color: var(--primary-bg-color);
     line-height: 1.5rem;
@@ -249,6 +252,7 @@ body {
     cursor:pointer;
     transition: ease;
     transition-duration: 0.5s;
+    border-radius: 5px;
 }
 
 .navbar a:hover {
@@ -429,7 +433,7 @@ li:hover {
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: center;
-    background: var(--primary-light-color);
+    background: var(--vertical-dtol-gradient);
 
 }
 
@@ -484,7 +488,7 @@ li:hover {
 
 li {
     min-width: 300px;
-    background: var(--primary-gradient);
+    
     padding: 0rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -512,32 +516,35 @@ li {
     scroll-margin-top: 6rem;
     margin-left: 0rem;
     margin-right: 0rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 0rem;
     overflow:hidden;
    
 }
 
 .Agenda h1 {
 
-    padding-top: 2rem;
+    padding-top: 4rem;
+    margin: 0rem;
+    margin-bottom: -4rem;
 
 }
 
 .Agenda {
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 7rem;
     
 }
 
 .ag {
     align-self: center;
     width: 100%;
+    scale: 80%;
     background-color: white;
     border: 0.5rem groove var(--primary-txt-color);
     margin: 0rem;
     padding: 0;
-    min-height: 55rem;
+    min-height: 850px;
     max-height: none;
 
 }
@@ -550,11 +557,11 @@ li {
     max-width: 600px; 
     margin: 0rem;
     padding: 0rem;
-    overflow: clip;
+    overflow: hidden;
     justify-content: flex;
     align-items: center;
     display: flex;
-  
+    align-self: center;
 }
 
 .formContainer h3 { 
@@ -664,6 +671,9 @@ li {
         animation-duration: 0.2;
         animation-timeline: view(block 90% auto);
 }
+.biocont {
+    overflow: clip;
+}
 .biocont p {
     float: center;
     background-color: white;
@@ -685,7 +695,7 @@ li {
    
    
         animation: slide-in ease-in;
-        animation-timeline: view(block 95% auto)
+        animation-timeline: view(block 95% auto);
    
 }
 
