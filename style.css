@@ -36,9 +36,7 @@
     to {
         opacity: 1;
     }
-    
 }
-
 @keyframes zoom-in {
     from {
       scale: 1;
@@ -90,9 +88,9 @@
     --primary-bg-color: var(--Light-yellow);
     --hover-color: var(--Light-yellow);
     --highlight-color: var(--Pink-lavender);
-    --primary-gradient: linear-gradient(158deg, rgb(202, 255, 223) 0%, rgb(202, 233, 253) 100%); 
+    --primary-gradient: linear-gradient(158deg, rgb(157, 255, 196) 0%, rgb(108, 196, 255) 100%); 
     --higlight-gradient: linear-gradient(158deg, rgba(255,252,196,1) 0%, rgba(255,167,249,1) 100%);
-
+    --vertical-ltod-gradient: linear-gradient(0deg, rgba(11,90,110,1) 0%, rgba(213,228,205,1) 75%, rgba(252,255,223,1) 100%);
 
 }
 
@@ -168,6 +166,8 @@ body {
     min-height: 30rem;
     max-height:60rem; 
     background-size: cover;
+
+    
     
     
 }
@@ -183,6 +183,9 @@ body {
     font-weight: 1em;
     font-size: 2em;
     line-height: 1;
+    background-image: var(--vertical-ltod-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .header h3 {
     font-variant: small-caps;
@@ -193,8 +196,9 @@ body {
     text-align: center;
     font-weight: normal;
     font-size: 1.2em;
-    text-decoration:overline;
-    text-decoration-style: dotted;
+    text-decoration:overline underline;
+    text-decoration-style: solid;
+    text-underline-offset: 0.4rem;
 }
 
 /** navbar style **/
@@ -326,7 +330,7 @@ q {
 }
 
 q:hover {
-    color: var(--highlight-color);
+    color: orange;
     
 }
 
@@ -396,16 +400,20 @@ li:hover {
     align-items: center;
     text-align: center;
     overflow-x: clip;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
 
 }
 
 .Consulta h3 {
     color: var(--primary-txt-color);
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 150%;
-    line-height: 1;
+    line-height: 1em;
 }
 
 
@@ -415,15 +423,15 @@ li:hover {
     .Consulta li {
     
         background: var(--primary-gradient);
-        padding: 0rem;
+        padding-bottom: 0.5rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        margin-right: 6rem;
-        margin-left: 6rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
         border: 0.01rem solid var(--primary-txt-color);
         border-radius: 0.1rem;
         text-align: center;
-        line-height: 1.5rem;
+        line-height: 1rem;
         transition: ease;
         transition-duration: 0.5s;
         cursor:default;
@@ -587,7 +595,7 @@ li {
 }
 .bio {
     scroll-margin-top: 14rem;
-    background-color: var(--primary-txt-color);
+    background: var(--vertical-ltod-gradient);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -601,22 +609,22 @@ li {
     padding-right: 10rem;
 }
 .portrait {
-    margin-right: 50rem;
-    width: 22rem;
+    margin-right: 40rem;
+    width: 18rem;
     float: right;
     align-self: flex-end;
     position: absolute;
     display: flex;
-    -webkit-animation: fade-in ease-in;
-   animation: fade-in ease-in;
-   animation-duration: 0.2;
-   animation-timeline: view(block 90% auto);
+    
+        animation: fade-in ease-in;
+        animation-duration: 0.2;
+        animation-timeline: view(block 90% auto);
 }
 .biocont p {
     float: center;
     background-color: var(--primary-bg-color);
     color: black;
-    font-size: large;
+    font-size: normal;
     position: relative;
     text-align: center;
     border: none;
@@ -626,17 +634,33 @@ li {
     padding-right: 1rem;
     padding-left: 1rem;
     display: flex;
-   align-self: center;
-   -webkit-animation: slide-in ease-in;
-   animation: slide-in ease-in;
-   animation-duration: 0.2;
-   animation-timeline: view(block 80% auto)
+    align-self: center;
+    align-items: flex-start;
+    flex-direction:row;
+    
+   
+   
+        animation: slide-in ease-in;
+        animation-timeline: view(block 80% auto)
    
 }
 
 .biocont a p:hover {
 
     background-color: var(--highlight-color);
+
+}
+
+.tab-move {
+
+    filter:invert();
+    scale: 0.5;
+    padding: 0rem;
+    padding-left: 0.4rem;
+    margin: -1.2rem;
+    
+    height: 4rem;
+    width: 4rem;
 
 }
 
