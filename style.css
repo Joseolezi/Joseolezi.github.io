@@ -591,9 +591,8 @@ li {
     justify-content: center;
     align-items: center;
     display: flex;
-    animation: pale-blue ease-in;
-   animation-duration: 0.2;
-   animation-timeline: view(block 80% auto)
+    flex-direction: row-reverse;
+   
 }
 .biocont {
     padding-top: 1rem;
@@ -602,10 +601,11 @@ li {
     padding-right: 10rem;
 }
 .portrait {
-    margin: 0;
-    width: 20rem;
-    float: left;
-    position: relative;
+    margin-right: 50rem;
+    width: 22rem;
+    float: right;
+    align-self: flex-end;
+    position: absolute;
     display: flex;
     -webkit-animation: fade-in ease-in;
    animation: fade-in ease-in;
@@ -614,7 +614,7 @@ li {
 }
 .biocont p {
     float: center;
-    background-color: white;
+    background-color: var(--primary-bg-color);
     color: black;
     font-size: large;
     position: relative;
