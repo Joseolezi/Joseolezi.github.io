@@ -90,7 +90,7 @@
     --highlight-color: var(--Pink-lavender);
     --primary-gradient: linear-gradient(158deg, rgb(157, 255, 196) 0%, rgb(108, 196, 255) 100%); 
     --higlight-gradient: linear-gradient(158deg, rgba(255,252,196,1) 0%, rgba(255,167,249,1) 100%);
-    --vertical-ltod-gradient: linear-gradient(0deg, rgba(11,90,110,1) 0%, rgba(213,228,205,1) 75%, rgba(252,255,223,1) 100%);
+    --vertical-ltod-gradient: linear-gradient(0deg, rgb(19, 148, 180) 0%, rgba(213,228,205,1) 75%, rgba(252,255,223,1) 100%);
 
 }
 
@@ -456,10 +456,11 @@ li:hover {
     }
 
 li {
+    min-width: 20rem;
     background: var(--primary-gradient);
     padding: 0rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
     margin-right: 1rem;
     margin-left: 1rem;
     border: 0.01rem solid var(--primary-txt-color);
@@ -593,13 +594,27 @@ li {
     color: var(--primary-bg-color);
     
 }
+
+.centercontainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--vertical-ltod-gradient);
+    padding:0rem;
+}
+
 .bio {
     scroll-margin-top: 14rem;
-    background: var(--vertical-ltod-gradient);
-    justify-content: center;
+    background: none;
+    justify-content: flex;
     align-items: center;
     display: flex;
-    flex-direction: row-reverse;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    
+    
+    ;
    
 }
 .biocont {
@@ -607,23 +622,27 @@ li {
     padding-bottom: 0rem;
     padding-left: 10rem;
     padding-right: 10rem;
+    
+    
 }
 .portrait {
-    margin-right: 40rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    padding: 0rem;
     width: 18rem;
-    float: right;
+   
     align-self: flex-end;
     position: absolute;
-    display: flex;
     
+
         animation: fade-in ease-in;
         animation-duration: 0.2;
         animation-timeline: view(block 90% auto);
 }
 .biocont p {
     float: center;
-    background-color: var(--primary-bg-color);
-    color: black;
+    background-color: white;
+     
     font-size: normal;
     position: relative;
     text-align: center;
@@ -641,7 +660,7 @@ li {
    
    
         animation: slide-in ease-in;
-        animation-timeline: view(block 80% auto)
+        animation-timeline: view(block 95% auto)
    
 }
 
@@ -658,7 +677,6 @@ li {
     padding: 0rem;
     padding-left: 0.4rem;
     margin: -1.2rem;
-    
     height: 4rem;
     width: 4rem;
 
