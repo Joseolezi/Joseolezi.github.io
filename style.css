@@ -743,9 +743,10 @@ li:hover {
    
 }
 
-.biocont a p:hover {
+.biocont p:hover {
 
     background-color: var(--highlight-color);
+    cursor: pointer;
 
 }
 
