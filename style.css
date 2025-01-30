@@ -100,7 +100,7 @@
     --vertical-dtol-gradient: linear-gradient(
         0deg, rgba(252,255,223,1)0%, #6cc4ff 75%,  #6cc4ff 100%);
     --primary-dark-gradient: linear-gradient(
-        0deg, rgb(0, 88, 110) 0%, rgb(224, 0, 206) 100%);
+        0deg, rgb(0, 103, 172) 0%, rgb(0, 187, 75) 100%); 
     --black-grey-gradient:(
         158deg, rgb(157, 255, 196) 0%, rgb(105, 105, 105) 100%);
  
@@ -111,7 +111,7 @@
 
   html {
     scroll-behavior:smooth;
-    
+
     justify-content: center;
     padding: 0;
 
@@ -193,7 +193,7 @@ body {
 .header h1 {
     
     font-style: normal;
-    color: var(--primary-txt-color);
+ 
     padding-top: 1rem;
     padding-bottom: 0rem;
     margin: 0rem;
@@ -222,6 +222,11 @@ body {
 
 /** navbar style **/
 
+.navbar-container {
+
+    padding: 1rem;
+
+}
 
 .navbar {
     padding: 0rem;
@@ -248,7 +253,7 @@ body {
     min-width: 250px;
     min-height: 1.5rem;
     display: inline-block;
-    margin-bottom: 0.5rem;
+ 
     cursor:pointer;
     transition: ease;
     transition-duration: 0.5s;
@@ -298,8 +303,8 @@ h2 {
 h3 {
     color: var(--primary-txt-color);
     text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     font-size: 150%;
     line-height: 1;
 }
@@ -512,27 +517,29 @@ li {
 
 /*Estilo de la agenda*/
 
-.sec2 {
-    scroll-margin-top: 6rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    padding: 0rem;
-    overflow:hidden;
-   
-}
-
 .Agenda h1 {
 
-    padding-top: 4rem;
+    padding-top: 0rem;
     margin: 0rem;
+    margin-top: 4rem;
+    margin-bottom: -4rem;
+  
+    z-index: 1;
+
+}
+
+.Agenda h3 {
+
+    padding-top: 0rem;
+    margin: 0rem;
+    margin-top: 4rem;
     margin-bottom: -4rem;
 
 }
 
 .Agenda {
     scroll-margin-top: 7rem;
+
     
 }
 
@@ -542,9 +549,10 @@ li {
     scale: 80%;
     background-color: white;
     border: 0.5rem groove var(--primary-txt-color);
+    border-radius: 2rem;
     margin: 0rem;
     padding: 0;
-    min-height: 850px;
+    min-height: 820px;
     max-height: none;
 
 }
@@ -552,29 +560,42 @@ li {
 /* E-mail format */
 
 .formContainer {
-    background-color: white                                                                          ;
-    border: 0.2rem solid var(--primary-txt-color);
-    max-width: 600px; 
-    margin: 0rem;
-    padding: 0rem;
-    overflow: hidden;
-    justify-content: flex;
+    
+    justify-content: center;
     align-items: center;
     display: flex;
-    align-self: center;
+    margin: 0rem;
+       
+}
+
+.email {
+
+    background-color: white;                                                                         ;
+    border: 0.2rem solid var(--primary-txt-color);
+    max-width: 1000px; 
+    margin: 0rem;
+    padding: 1rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 0.4rem;
+
 }
 
 .formContainer h3 { 
     color: var(--primary-txt-color);
     padding-top: 0rem;
     margin: 1rem auto;
+    font-size: normal;
 }
 .formContainer input {
 
     border: none;
     border-bottom: 0.2rem solid var(--primary-txt-color);
-    
-    font-size: normal; 
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: large; 
     outline: none; 
 }
 .formContainer select {
@@ -582,22 +603,35 @@ li {
     margin-top: 1rem;
     margin-bottom: 1rem;
     cursor: pointer;
+    font-size: normal;
 }
+
+.message-container {
+    
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
 .formContainer textarea {
+    height: 12rem;
     width: 100%;
-    height: 6rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin: 0.5rem;
+    margin-top: 0rem;
     padding: none;
     border-color: var(--primary-txt-color);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
+    font-size: large;
     resize: none;
-    
+    align-self: stretch;
+    border-radius: 0.2rem;
 
 }
+
 .formContainer p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
@@ -611,11 +645,8 @@ li {
     cursor: pointer; 
     background-color: var(--primary-txt-color);
     color: var(--primary-bg-color);
-    margin: 2rem, auto;
-    padding: auto;
+    padding: 0.5rem 1rem;
     font-size: normal; 
-    width: 8rem;
-    height: 2rem;
     text-align: center;
     float: center;
     transition: ease;
@@ -631,12 +662,13 @@ li {
 }
 
 .centercontainer {
-    overflow: hidden;
+    overflow: clip;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--vertical-ltod-gradient);
     padding:0rem;
+
 }
 
 .bio {
@@ -672,10 +704,10 @@ li {
         animation-timeline: view(block 90% auto);
 }
 .biocont {
-    overflow: clip;
+    overflow: flex;
 }
 .biocont p {
-    float: center;
+    width: 100%;
     background-color: white;
     min-width: 200px;
     font-size: normal;
@@ -689,11 +721,7 @@ li {
     padding-left: 1rem;
     display: flex;
     align-self: center;
-    align-items: flex-start;
-    flex-direction:row;
-    
-   
-   
+        
         animation: slide-in ease-in;
         animation-timeline: view(block 95% auto);
    

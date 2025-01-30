@@ -24,14 +24,14 @@
     <header class="header" > 
         <nav class=navbar id="navbar">    
             <h1>Jose Fandos</h1>
-
             <h3>PSICOLOGO GENERAL SANITARIO</h3>
-        
+            <div class="navbar-container">  
                 <ul>
                     <li><a href= "#Inicio">Inicio</a></li>
                     <li><a href="#bio">Consulta</a></li>
                     <li><a href="#Agenda">Agenda</a></li>
                 </ul>
+            </div>  
         </nav>
 
     </header>
@@ -103,20 +103,21 @@
             
         </section>
         <div class= "Agenda" id="Agenda">
-            <h1>Agenda</h1>
-        </div>
+           
+        
     <section class="sec2" id="sec2">
         
-           
+            <h1>Agenda</h1>
+            <h3>Puedes reservar aquí tu cita online</h3>
             <iframe class="ag" id="ag" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ27Jw-rD8CNcxGwUUie4A0wvQe933BwNoaUmnG9Lqco7tHm1syYqZ9QrQu5D-AvN_kXKpOAdNGw?gv=true"
              ></iframe>
 
          </section>
-
+        </div>
     <!-- style="border: 0px none; margin-left: 0.5rem; margin-right: 0.5rem; height: 45rem; margin-top: -230px; width: 100%;"-->
-    <h1>Email</h1>
+        <h3>También puedes escribirme a través de este formulario</h3>
     <div class="formContainer id=formContainer">
-        
+        <div class="email">
             <form onsubmit="emailSend(); reset(); return false;">
                 <h3>jose.fandos.pgs@gmail.com</h3>
                 <input type="text" name="nombre" placeholder="Nombre y apellidos*" required></input>
@@ -130,14 +131,17 @@
                     <option>Urgencia</option>
                     <option>Otro</option>
                 </select>
-                <textarea name="Mensaje" placeholder="Mensaje*" required></textarea>
+                <div class="message-container">
+                    <textarea name="Mensaje" placeholder="Texto*" required></textarea>
+                </div>
                 <button class="btn" id="btn" type="submit"> Enviar Email</button>
             </form>
+            </div>
         </div>
         <script src="main.js"></script>
                     
                 
             </form>
-
+<br><br><br><br><br>
 </body>
 </html>
