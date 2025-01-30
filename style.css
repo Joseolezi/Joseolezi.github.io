@@ -215,7 +215,7 @@ body {
     padding-bottom: 0.5rem;
     padding-right: 0rem;
     padding-left: 0rem;
-    border-bottom: 0.3rem solid var(--highlight-color);
+    border-bottom: 0.6rem ridge var(--highlight-color);
     margin: 0rem;
     align-self: center;
     
@@ -447,10 +447,22 @@ li:hover {
     text-align: center;
     padding-top: 0rem;
     padding-bottom: 0.2rem;
-    line-height: 0.5;
-  
+    line-height: 0.5; 
  
 } 
+
+.areap {
+
+    display: none;
+
+}
+
+.areas p {
+
+    max-width: 12rem;
+    border: none !important;
+
+}
 
 
 
@@ -461,8 +473,8 @@ li:hover {
         min-width: 200px;
         background: var(--primary-bg-color);
         padding-bottom: 0.5rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
         margin-right: 1rem;
         margin-left: 1rem;
         border: 0.01rem solid var(--primary-txt-color);
@@ -531,6 +543,8 @@ li:hover {
 .Agenda {
     scroll-margin-top: 10rem;
     overflow: clip;
+    margin: 0rem;
+    padding: 0rem;
     
 }
 
@@ -544,7 +558,7 @@ li:hover {
     margin: 0rem;
     padding: 0;
     min-height: 820px;
-    max-height: none;
+    max-height: 2000px;
 
 }
 
@@ -743,7 +757,7 @@ li:hover {
    
 }
 
-.biocont p:hover {
+.biobtn:hover {
 
     background-color: var(--highlight-color);
     cursor: pointer;
