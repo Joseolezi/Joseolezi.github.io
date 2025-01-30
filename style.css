@@ -385,7 +385,7 @@ li:hover {
 
 
 .Inicio   {
-    scroll-margin-top: 10rem;
+    scroll-margin-top: 12rem;
     
     padding: 0.5rem;
     padding-top: 1.5rem;
@@ -541,7 +541,7 @@ li:hover {
 }
 
 .Agenda {
-    scroll-margin-top: 10rem;
+    scroll-margin-top: 12rem;
     overflow: clip;
     margin: 0rem;
     padding: 0rem;
@@ -702,7 +702,7 @@ li:hover {
 }
 
 .Consulta {
-    scroll-margin-top: 16rem;
+    scroll-margin-top: 18rem;
     background: none;
     justify-content: flex;
     align-items: center;
