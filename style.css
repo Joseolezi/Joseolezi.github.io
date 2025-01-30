@@ -165,15 +165,12 @@ body {
     right: 0;
     bottom: 0;
     align-self: center;
-    width: 100%;
+    
     padding: 0rem;
     margin: 0rem;
 
     border-radius: 0rem;
-    
-    -webkit-animation: desenfocar linear;
-    animation: desenfocar linear;
-    animation-timeline: scroll(y);
+   
 
     /* keep the image at the center and crop when resizing */
     overflow: hidden;
@@ -224,25 +221,22 @@ body {
 
 .navbar-container {
 
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    
 
 }
 
 .navbar {
     padding: 0rem;
     margin: 0rem;
-    top: 0;
-    left: 0;
-    right: 0;
-
+    
     
 }
 .navbar ul {
     
-    list-style-type: none;
-    line-height: 1.5;
-    padding: 0rem;
-    margin: 0rem;
+    overflow: hidden;
+    
     
 }
 .navbar a {
@@ -253,7 +247,7 @@ body {
     min-width: 250px;
     min-height: 1.5rem;
     display: inline-block;
- 
+    margin: 0.2rem;
     cursor:pointer;
     transition: ease;
     transition-duration: 0.5s;
@@ -392,13 +386,13 @@ li:hover {
 /* Estilo para sec0 */	
 
 .Inicio   {
-
+    scroll-margin-top: 12rem;
     background: var(--primary-gradient);
     padding: 0.5rem;
     padding-top: 1.5rem;
     padding-bottom: 0rem;
-    margin-top: 1.5rem;
-    margin-bottom: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
     margin-right: 0rem;
     margin-left: 0rem;
     border: 0.15rem dotted var(--primary-txt-color);
@@ -408,7 +402,7 @@ li:hover {
     max-height: min-content;
     align-items: center;
     text-align: center;
-    scroll-margin-top: 10rem;
+    
     
     /* -webkit-animation: fade-in ease;
     animation: fade-in ease;
@@ -418,18 +412,26 @@ li:hover {
     
 }
 
-/* Estilo para Consulta */	
+/* Estilo para areas */	
+.areas-container {
+    background: var(--vertical-dtol-gradient);
+    display: flex;
+    justify-content: center;
+    overflow: clip;
+    flex-direction: row;
 
-.areas h1 {
+}
+
+.areas-title h1 {
     margin: 0rem;
     padding: 1rem;
     color: var(--primary-bg-color);
     background-color: var(--primary-txt-color);
 
 }
-.Consulta {
-
-    scroll-margin-top: 9rem;
+.areas {
+    max-width: 1200px;
+    scroll-margin-top: 11rem;
     height: min-content;
     align-items: center;
     text-align: center;
@@ -442,22 +444,23 @@ li:hover {
 
 }
 
-.Consulta h4 {
+.areas h4 {
     color: var(--primary-txt-color);
     text-align: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 150%;
+    padding-top: 0rem;
+    padding-bottom: 0.2rem;
+    line-height: 0.5;
+  
  
 } 
 
 
 
 
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {} */
  
-    .Consulta li {
-    
+    .areas li {
+        
         background: var(--primary-bg-color);
         padding-bottom: 0.5rem;
         margin-top: 1rem;
@@ -465,35 +468,32 @@ li:hover {
         margin-right: 1rem;
         margin-left: 1rem;
         border: 0.01rem solid var(--primary-txt-color);
-        border-radius: 0.1rem;
+        border-radius: 0.4rem;
         text-align: center;
         line-height: 1rem;
         transition: ease;
         transition-duration: 0.5s;
         cursor:default;
-        max-height: min-content;
-       
+        max-height: min-content; 
         
-        
-    } }
+    } 
 
 
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {} */
  
-.Consulta li:hover {
-    background: var(--higlight-gradient);
+.areas li:hover {
+    background: var(--highlight-color);
     scale: 1.1;
     
-} }
+} 
 
-    .Consulta li p {
+    .areas li p {
         text-align: center;
          
     }
 
 li {
-    min-width: 300px;
-    
+    min-width: 200px;
     padding: 0rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -502,7 +502,7 @@ li {
     border: 0.01rem solid var(--primary-txt-color);
     border-radius: 0.1rem;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: rem;
     transition: ease-out;
     transition-duration: 0.5s;
     cursor:default;
@@ -523,7 +523,6 @@ li {
     margin: 0rem;
     margin-top: 4rem;
     margin-bottom: -4rem;
-  
     z-index: 1;
 
 }
@@ -538,8 +537,8 @@ li {
 }
 
 .Agenda {
-    scroll-margin-top: 7rem;
-
+    scroll-margin-top: 10rem;
+    overflow: clip;
     
 }
 
@@ -671,8 +670,8 @@ li {
 
 }
 
-.bio {
-    scroll-margin-top: 14rem;
+.Consulta {
+    scroll-margin-top: 16rem;
     background: none;
     justify-content: flex;
     align-items: center;
