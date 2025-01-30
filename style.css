@@ -103,7 +103,11 @@
         0deg, rgb(0, 103, 172) 0%, rgb(0, 187, 75) 100%); 
     --black-grey-gradient:(
         158deg, rgb(157, 255, 196) 0%, rgb(105, 105, 105) 100%);
- 
+    --aqua-in-out-gradient: linear-gradient(0deg, 
+        rgba(252,255,223,1) 0%, 
+        rgba(108,196,255,1) 20%, 
+        rgba(108,196,255,1) 80%, 
+        rgba(252,255,223,1) 100%);
 
     }
 
@@ -111,20 +115,12 @@
 
   html {
     scroll-behavior:smooth;
-
     justify-content: center;
-    padding: 0;
+    
 
   }
 
 /* Estilo de containers */
-
-.header-container {
-    
-    position: relative;
-    text-align: center;
-}
-
 
   /* Estilo para el cuerpo de la página */
 
@@ -132,12 +128,11 @@ header {
     background-color: var(--primary-bg-color);
     padding: 0rem;
     margin: 0rem;
-    top: 0;
-    left: 0;
-    right: 0;
     position: sticky;
     z-index: 1;
-  
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 body {
@@ -145,6 +140,7 @@ body {
     font-family: Work Sans, sans-serif;
     background: var(--primary-bg-color);
     margin: 0rem;
+    padding: 0rem;
     position: relative;
     justify-content: flex;
     text-align: center;
@@ -152,9 +148,8 @@ body {
     font-weight:normal;
     font-style: normal;
     cursor: default;
+    
 }
-
-/* Estilo del header */
 
 
 
@@ -164,14 +159,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    align-self: center;
-    
-    padding: 0rem;
-    margin: 0rem;
-
-    border-radius: 0rem;
+    align-self: center;   
    
-
+    border-radius: 0rem;
     /* keep the image at the center and crop when resizing */
     overflow: hidden;
     display: flex;
@@ -190,9 +180,7 @@ body {
 .header h1 {
     
     font-style: normal;
- 
     padding-top: 1rem;
-    padding-bottom: 0rem;
     margin: 0rem;
     margin-bottom: 0.4rem;
     font-weight: 1em;
@@ -222,7 +210,12 @@ body {
 .navbar-container {
 
     padding-top: 1rem;
-    padding-bottom: 0rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    border-bottom: 0.3rem solid var(--highlight-color);
+    margin: 0rem;
+    align-self: center;
     
 
 }
@@ -231,23 +224,20 @@ body {
     padding: 0rem;
     margin: 0rem;
     
-    
 }
-.navbar ul {
-    
-    overflow: hidden;
-    
-    
-}
+
 .navbar a {
-    
+
+    display: flex;
+    justify-content: center;
     background-color: var(--primary-txt-color);
     color: var(--primary-bg-color);
     line-height: 1.5rem;
     min-width: 250px;
     min-height: 1.5rem;
-    display: inline-block;
-    margin: 0.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    
     cursor:pointer;
     transition: ease;
     transition-duration: 0.5s;
@@ -266,6 +256,11 @@ body {
     
 }
 
+ul {
+
+    margin: 0rem;
+    padding: 0rem;
+}
 
 .navbar li {
     display:ruby;
@@ -385,18 +380,18 @@ li:hover {
 
 /* Estilo para sec0 */	
 
+
 .Inicio   {
-    scroll-margin-top: 12rem;
-    background: var(--primary-gradient);
+    scroll-margin-top: 10rem;
+    
     padding: 0.5rem;
     padding-top: 1.5rem;
     padding-bottom: 0rem;
-    margin-top: 6rem;
-    margin-bottom: 8rem;
+    margin-top: 0rem;
+    margin-bottom: 4rem;
     margin-right: 0rem;
     margin-left: 0rem;
-    border: 0.15rem dotted var(--primary-txt-color);
-    border-radius: 2rem;
+    
     text-align: center;
     line-height: 0.5rem;
     max-height: min-content;
@@ -460,7 +455,7 @@ li:hover {
 /* @media (hover: hover) and (pointer: fine) {} */
  
     .areas li {
-        
+        min-width: 200px;
         background: var(--primary-bg-color);
         padding-bottom: 0.5rem;
         margin-top: 1rem;
@@ -489,30 +484,24 @@ li:hover {
 
     .areas li p {
         text-align: center;
-         
+        min-width: 200px;
+        padding: 0rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        border: 0.01rem solid var(--primary-txt-color);
+        border-radius: 0.1rem;
+        text-align: center;
+        line-height: 1rem;
+        transition: ease-out;
+        transition-duration: 0.5s;
+        cursor:default;
+        animation-duration: 0.1;
+        -webkit-animation: slide-in linear;
+        animation: slide-in linear;
+        animation-timeline: slide-in view(block 90% auto);
     }
-
-li {
-    min-width: 200px;
-    padding: 0rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    border: 0.01rem solid var(--primary-txt-color);
-    border-radius: 0.1rem;
-    text-align: center;
-    line-height: rem;
-    transition: ease-out;
-    transition-duration: 0.5s;
-    cursor:default;
-    animation-duration: 0.1;
-    -webkit-animation: slide-in linear;
-    animation: slide-in linear;
-    animation-timeline: slide-in view(block 90% auto);
-
-    
-}
 
 
 /*Estilo de la agenda*/
@@ -572,7 +561,9 @@ li {
     background-color: white;                                                                         ;
     border: 0.2rem solid var(--primary-txt-color);
     max-width: 1000px; 
-    margin: 0rem;
+    margin-top: 0rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     padding: 1rem;
     overflow: hidden;
     justify-content: center;
@@ -586,7 +577,8 @@ li {
     color: var(--primary-txt-color);
     padding-top: 0rem;
     margin: 1rem auto;
-    font-size: normal;
+    font-size: 120%;
+    
 }
 .formContainer input {
 
@@ -644,6 +636,7 @@ li {
     cursor: pointer; 
     background-color: var(--primary-txt-color);
     color: var(--primary-bg-color);
+    margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     font-size: normal; 
     text-align: center;
