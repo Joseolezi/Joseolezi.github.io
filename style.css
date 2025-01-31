@@ -132,8 +132,8 @@ header {
     
     background: linear-gradient(90deg, 
     rgba(252, 255, 223, 0.5) 0%, 
-    rgba(252, 255, 223, 1) 30%,
-    rgba(252, 255, 223, 1) 70%,
+    rgba(252, 255, 223, 0.8) 30%,
+    rgba(252, 255, 223, 0.8) 70%,
     rgba(252, 255, 223, 0.5) 100%); 
     padding: 0rem;
     margin: 0rem;
