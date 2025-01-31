@@ -74,15 +74,3 @@ function sendEmail() {
   }, false);
 
 
-// subject value
-const motivo = document.getElementById("motivo");
-var subjectvalue = "mensaje";
-
-  function setSubjectvalue () {
-
-var subjectvalue = motivo.value;
-document.getElementsByName("_subject")= value=subjectvalue;
-return subjectvalue;
-write(subjectvalue);
-  }
-  

@@ -89,6 +89,7 @@
     --secondary-txt-color: #004f63;
     --primary-bg-color: var(--Light-yellow);
     --hover-color: var(--Light-yellow);
+    --dark-highlight-color: #f349d7;
     --highlight-color: var(--Pink-lavender);
     --primary-light-color: var(--Maya-blue);
     --primary-gradient: linear-gradient(
@@ -108,6 +109,9 @@
         rgba(108,196,255,1) 20%, 
         rgba(108,196,255,1) 80%, 
         rgba(252,255,223,1) 100%);
+    --gradient-v-white-to-bg: linear-gradient(
+       0deg, var(--primary-bg-color)90%, rgba(0,0,0,0) 100%);
+
 
     }
 
@@ -125,7 +129,10 @@
   /* Estilo para el cuerpo de la página */
 
 header {
-    background-color: var(--primary-bg-color);
+    
+    background: linear-gradient(90deg,
+    rgba(0,0,0,0) 0%, var(--primary-bg-color) 40%,
+    var(--primary-bg-color) 60%, rgba(0,0,0,0) 100%);
     padding: 0rem;
     margin: 0rem;
     position: sticky;
@@ -138,7 +145,7 @@ header {
 body {
     
     font-family: Work Sans, sans-serif;
-    background: var(--primary-bg-color);
+    
     margin: 0rem;
     padding: 0rem;
     position: relative;
@@ -148,7 +155,11 @@ body {
     font-weight:normal;
     font-style: normal;
     cursor: default;
-    
+   
+    background: white;
+    background-image: radial-gradient(black 1px, transparent 0);
+    background-size: 20px 20px;
+    background-position: -19px -19px 
 }
 
 
@@ -348,7 +359,7 @@ q {
 }
 
 q:hover {
-    color: orange;
+    color: var(--dark-highlight-color);
     
 }
 
@@ -385,38 +396,32 @@ li:hover {
 
 
 .Inicio   {
-    scroll-margin-top: 12rem;
     
+    scroll-margin-top: 12rem;
+    background: var(--primary-bg-color);
     padding: 0.5rem;
     padding-top: 1.5rem;
-    padding-bottom: 0rem;
+    padding-bottom: 8rem;
     margin-top: 0rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     margin-right: 0rem;
     margin-left: 0rem;
-    
     text-align: center;
     line-height: 0.5rem;
     max-height: min-content;
     align-items: center;
-    text-align: center;
-    
-    
-    /* -webkit-animation: fade-in ease;
-    animation: fade-in ease;
-    animation-timeline: view();
-    */
-      
-    
+    text-align: center;         
 }
 
 /* Estilo para areas */	
 .areas-container {
-    background: var(--vertical-dtol-gradient);
+   
     display: flex;
     justify-content: center;
     overflow: clip;
     flex-direction: row;
+
+    background: none;
 
 }
 
@@ -428,6 +433,7 @@ li:hover {
 
 }
 .areas {
+    margin-top: 1.5rem;
     max-width: 1200px;
     scroll-margin-top: 11rem;
     height: min-content;
@@ -438,7 +444,7 @@ li:hover {
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: center;
-    background: var(--vertical-dtol-gradient);
+   
 
 }
 
@@ -485,6 +491,7 @@ li:hover {
         transition-duration: 0.5s;
         cursor:default;
         max-height: min-content; 
+        filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
         
     } 
 
@@ -494,7 +501,7 @@ li:hover {
 .areas li:hover {
     background: var(--highlight-color);
     scale: 1.1;
-    
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
 } 
 
     .areas li p {
@@ -523,12 +530,13 @@ li:hover {
 
 .Agenda h1 {
 
-    padding-top: 0rem;
+    padding-top: 8rem;
     margin: 0rem;
-    margin-top: 4rem;
+    margin-top: 0rem;
     margin-bottom: -4rem;
     z-index: 1;
-
+    
+    
 }
 
 .Agenda h3 {
@@ -541,11 +549,11 @@ li:hover {
 }
 
 .Agenda {
-    scroll-margin-top: 12rem;
+    scroll-margin-top: 6rem;
     overflow: clip;
     margin: 0rem;
     padding: 0rem;
-    
+    background: var(--gradient-v-white-to-bg);
 }
 
 .ag {
@@ -563,7 +571,19 @@ li:hover {
 }
 
 /* E-mail format */
+.form-parent-container {
 
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(0deg,
+    rgba(0,0,0,0) 0%, var(--primary-bg-color) 90%);
+    padding:0rem;
+
+}
+    
 .form-title-container h3 {
 
     margin-bottom: 1rem;
@@ -578,6 +598,7 @@ li:hover {
     margin: 0rem;
     text-decoration: underline;
     margin-bottom: 0.5rem;
+   
 
 
 }
@@ -588,7 +609,7 @@ li:hover {
     align-items: center;
     display: flex;
     margin: 0rem;
-   
+    
        
 }
 
@@ -693,13 +714,22 @@ li:hover {
     color: var(--primary-bg-color);
     
 }
+.consulta-container {
 
+    padding-top: 6rem;
+    
+}
+.consulta-title {
+    margin: 0rem;
+    padding: 0rem;
+}
 .centercontainer {
     overflow: clip;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--vertical-ltod-gradient);
+    background: linear-gradient(0deg,
+    rgba(0,0,0,0) 0%, var(--primary-bg-color) 100%);
     padding:0rem;
 
 }

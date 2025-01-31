@@ -71,42 +71,44 @@
                         <h5>Aaron Beck</h5>
             </section>  
         </div>
-            <div class="consula-container">
+            <h1>Consulta</h1>
+            <div class="centercontainer">
+        <section class="Consulta" id="Consulta">
+            <img class="portrait" src="Images/jose-portrait.png" alt=""></img>
+            <div class="biocont" id='biocont'>
                 
-                    <div class="centercontainer">
-                        <section class="Consulta" id="Consulta">
-                            <img class="portrait" src="Images/jose-portrait.png" alt="">
-                            </img>
-                                <div class="biocont" id='biocont'>
-                
-                                    <p>¡Hola! Soy Jose. Bienvenido/a a mi consulta online Ψ</p>
+                <p>¡Hola! Soy Jose. Bienvenido/a a mi consulta online Ψ</p>
                
-                                    <p class="biobtn" id="popen" onclick="openpop()">Puedes ver mi trayectoria profesional aquí
-                                    <img class="tab-move" id="tab-move" src="Images/tab-move.png" alt="">
-                                    </img></p>
-                                        <!-- popup -->
-                                        <div class="popup-overlay" id="popupOverlay">
+                <p class="biobtn" id="popen" onclick="openpop()">Puedes ver mi trayectoria profesional aquí
+                        <img class="tab-move" id="tab-move" src="Images/tab-move.png" alt="">
+                    </img></p>
+                        <!-- popup -->
+                        <div class="popup-overlay" id="popupOverlay">
 
-                                        <div class="popup" id="popup">
-                                    
-                                            <div class="popup-content">
-                                                <h3>Formación y experiencia:</h3>
-                                                <p>2015: Grado en psicología (UJI)</p>
-                                                <p>2016: Máster en Coaching y liderazgo (UV)</p>
-                                                <p>2016 - 2023: Psicólogo (freelance)</p>
-                                                <p>2023 - 2025: Máster en psicología general sanitaria (VIU)</p>
-                                                <p>2025 - actualidad: Psicólogo general sanitario (freelance)</p>
-                                
-                                                 <button id="popclose" onclick="closepop()">Cerrar</button>
+                        <div class="popup" id="popup">
                     
-                                            </div>
-                                        </div>
-                                </div>
-                        </section>
+                            <div class="popup-content">
+                                <h3>Formación y experiencia:</h3>
+                                <p>2015: Grado en psicología (UJI)</p>
+                                <p>2016: Máster en Coaching y liderazgo (UV)</p>
+                                <p>2016 - 2023: Psicólogo (freelance)</p>
+                                <p>2023 - 2025: Máster en psicología general sanitaria (VIU)</p>
+                                <p>2025 - actualidad: Psicólogo general sanitario (freelance)</p>
+                 
+                <button id="popclose" onclick="closepop()">Cerrar</button>
+                    
+                            </div>
+                         
                     </div>
+                
+                </div>
+                
+                <script src="main.js"></script>
+                 <!-- popup end -->
             </div>
         </div>
         
+        </section>
             <div class="areas-title"><h1>Áreas de trabajo</h1></div>
                 <div class="areas-container">
                 
@@ -121,9 +123,8 @@
                         <li class="areasli"><h4>Psicología infantil</h4></li>
                         <li class="areasli"><h4>Psicología de la salud</h4></li>
                         <li class="areasli"><h4>Charlas de psicología</h4></li>
-                    </section>
                 </div>
-            </div>
+        </section>
         <div class= "Agenda" id="Agenda">
             <h1>Agenda</h1>
             <h3>Reservar cita online</h3>
@@ -132,48 +133,47 @@
 
         </div>
     <!-- style="border: 0px none; margin-left: 0.5rem; margin-right: 0.5rem; height: 45rem; margin-top: -230px; width: 100%;"-->
-       
-    
-
-        <div class="form-parent-container">
-            <div class="form-title-container" id="form-title-container">
-                <h3>Formulario de contacto</h3>   
-            </div>
-
-
-
-            <div class="formContainer id=formContainer">
+        <div class="form-title-container" id="form-title-container">
+            <h3>Formulario de contacto</h3> 
+           
+        </div>
+    <div class="formContainer id=formContainer">
       
-                <div class="email">
-                    <form id="formulario" action="https://formsubmit.co/jose.fandos.pgs@gmail.com" method="POST" onsubmit="sendEmail(); reset(); return false;">
+        <div class="email">
+            <form id="formulario" action="https://formsubmit.co/jose.fandos.pgs@gmail.com" method="POST" onsubmit="sendEmail(); reset(); return false;">
                 
-                    <input type="text" id="InputName" type="text" name="Nombre" placeholder="Nombre y apellidos*" required></input>
-                    <input type="email" name="Email" id="InputEmail" type="text" name="Email" placeholder="Email*" required></input>
-                    <input type="number" id="InputTel" type="text" name="Teléfono" placeholder="Teléfono"></input>
-                    <input type="hidden" id="_subject" name="_subject" value="Formulario de la web">
-                    <select type="subject" id="motivo" name="Asunto">
-                        
-                        <option>Mensaje</option>
-                        <option>Solicitud de información</option>
-                        <option>Solicitud de llamada telefónica</option>
-                        <option>Modificar/cancelar cita</option>
-                        <option>Propuesta comercial</option>
-                        <option>Urgencia</option>
-                        <option>Otro</option>
-                    </select>
-                    <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" name="_autoresponse" value="Copia de tu mensaje:">
-                    <div class="message-container">
-                        <textarea type="text" id="mensaje" name="Mensaje" placeholder="Texto*" required></textarea>
-                    </div>
-                    <button class="btn" id="btn" type="submit" value="Send"> Enviar</button>
-                        <p class="nota" id="nota">*Al hacer click en enviar se te redigirá al recaptcha de seguridad del servicio FormSubmit</p>
-                    </form>
-            
+                <input type="text" id="InputName" type="text" name="Nombre" placeholder="Nombre y apellidos*" required></input>
+                <input type="email" name="Email" id="InputEmail" type="text" name="Email" placeholder="Email*" required></input>
+                <input type="number" id="InputTel" type="text" name="Teléfono" placeholder="Teléfono"></input>
+                <input type="hidden" id="_subject" name="_subject" value="Formulario de la web">
+                <select type="subject" id="motivo" name="Asunto">
+                    <option>Mensaje</option>
+                    <option>Solicitud de información</option>
+                    <option>Solicitud de llamada telefónica</option>
+                    <option>Modificar/cancelar cita</option>
+                    <option>Propuesta comercial</option>
+                    <option>Urgencia</option>
+                    <option>Otro</option>
+                </select>
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_autoresponse" value="Copia de tu mensaje:">
+                <div class="message-container">
+                    <textarea type="text" id="mensaje" name="Mensaje" placeholder="Texto*" required></textarea>
                 </div>
+                <button class="btn" id="btn" type="submit" value="Send"> Enviar</button>
+                <script>
+
+                    
+                </script>
+                <p>*Al hacer click en enviar se te redigirá al recaptcha de seguridad del servicio FormSubmit</p>
+          </form>
+            </form>
             </div>
         </div>
-   
+        <script src="main.js"></script>
+                    
+                
+            </form>
 <br><br><br><br><br>
 </body>
 </html>
