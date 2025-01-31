@@ -135,28 +135,34 @@
     <!-- style="border: 0px none; margin-left: 0.5rem; margin-right: 0.5rem; height: 45rem; margin-top: -230px; width: 100%;"-->
         <div class="form-title-container" id="form-title-container">
             <h3>Formulario de contacto</h3> 
-            <p>jose.fandos.pgs@gmail.com</p>
+           
         </div>
     <div class="formContainer id=formContainer">
+      
         <div class="email">
-            <form id="formulario" action="send_email.php" method="post" onsubmit="sendEmail(); reset(); return false;">
+            <form id="formulario" action="https://formsubmit.co/jose.fandos.pgs@gmail.com" method="POST" onsubmit="sendEmail(); reset(); return false;">
                 
-                <input type="text" id="InputName" type="text" name="nombre" placeholder="Nombre y apellidos*" required></input>
-                <input type="email" id="InputEmail" type="text" name="Email" placeholder="Email*" required></input>
-                <input type="number" id="InputTel" type="text" name="Tel" placeholder="Teléfono"></input>
-                <select id="motivo" name="motivo">
+                <input type="text" id="InputName" type="text" name="Nombre" placeholder="Nombre y apellidos*" required></input>
+                <input type="email" name="Email" id="InputEmail" type="text" name="Email" placeholder="Email*" required></input>
+                <input type="number" id="InputTel" type="text" name="Teléfono" placeholder="Teléfono"></input>
+                <input type="hidden" id="_subject" name="_subject" value="Formulario de la web">
+                <select type="subject" id="motivo" name="Asunto">
+                    
                     <option>Mensaje</option>
                     <option>Solicitud de información</option>
+                    <option>Solicitud de llamada telefónica</option>
                     <option>Modificar/cancelar cita</option>
                     <option>Propuesta comercial</option>
                     <option>Urgencia</option>
                     <option>Otro</option>
                 </select>
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_autoresponse" value="Copia de tu mensaje:">
                 <div class="message-container">
                     <textarea type="text" id="mensaje" name="Mensaje" placeholder="Texto*" required></textarea>
                 </div>
                 <button class="btn" id="btn" type="submit" value="Send"> Enviar</button>
-          
+          </form>
             </form>
             </div>
         </div>

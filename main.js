@@ -17,7 +17,7 @@ function closepop() {
 const InputName = document.getElementById("InputName")
 const InputEmail = document.getElementById("InputEmail")
 const InputTel = document.getElementById("InputTel")
-const motivo = document.getElementById("motivo")
+
 const mensaje = document.getElementById("mensaje");
 
 function sendEmail() {
@@ -72,3 +72,17 @@ function sendEmail() {
       alert(errorMessage);
     }
   }, false);
+
+
+// subject value
+const motivo = document.getElementById("motivo");
+var subjectvalue = "mensaje";
+
+  function setSubjectvalue () {
+
+var subjectvalue = motivo.value;
+document.getElementsByName("_subject")= value=subjectvalue;
+return subjectvalue;
+write(subjectvalue);
+  }
+  
