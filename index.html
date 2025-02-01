@@ -18,7 +18,6 @@
     <script src="main.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script> 
 </head>
-
 </a>
 <body>
     
@@ -29,7 +28,7 @@
             <h3>PSICOLOGO GENERAL SANITARIO</h3>
             <div class="navbar-container">  
                 <ul>
-                    <li><a href= "#Inicio">Inicio</a></li>
+                    <li><a href="#Inicio">Inicio</a></li>
                     <li><a href="#Consulta">Consulta</a></li>
                     <li><a href="#Agenda">Agenda</a></li>
                 </ul>
@@ -75,7 +74,7 @@
                 
                     <div class="centercontainer">
                         <section class="Consulta" id="Consulta">
-                            <img class="portrait" src="Images/jose-portrait.png" alt="">
+                            <img class="portrait" id="portrait" src="Images/jose-portrait.png" alt="">
                             </img>
                                 <div class="biocont" id='biocont'>
                 
@@ -148,10 +147,10 @@
                 </div>
             </div>
 
-            <div class="areas-title"><h1>Agenda: reserva tu cita online</h1></div>
+            <div class="areas-title"><h1>Agenda</h1></div>
         <div class= "Agenda" id="Agenda">
             <div class="form-title-container" id="form-title-container">
-                <h3 class="openform-btn" style="cursor:pointer" onclick="openform()">Formulario de contacto</h3>   
+                <h3 class="openform-btn" style="cursor:pointer" onclick="openform()">Formulario de contacto<img class="tab-move" id="tab-move" src="Images/tab-move.png" alt=""></h3>   
             </div>
             <iframe class="ag" id="ag" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ27Jw-rD8CNcxGwUUie4A0wvQe933BwNoaUmnG9Lqco7tHm1syYqZ9QrQu5D-AvN_kXKpOAdNGw?gv=true"
              ></iframe>
@@ -198,6 +197,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div style="background-color:#fcffdf">
+        <br><br><br><br><br>
     </div>
 </body>
 </html>
