@@ -539,6 +539,11 @@ li:hover {
 
 }
 
+.areasli-img-b {
+
+    filter: drop-shadow(0.4rem 0.2rem 0.4rem rgb(170, 0, 147));
+}
+
 .areasli:hover .area-img-a {
 
 display: none;
@@ -548,6 +553,7 @@ display: none;
 .areasli:hover .area-img-b {
 
     display: inline !important;
+    filter: drop-shadow(0.4rem 0.2rem 0.4rem rgb(219, 105, 204));
 }
 
     .areas li p {
