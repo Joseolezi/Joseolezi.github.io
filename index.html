@@ -147,9 +147,12 @@
                     </section>
                 </div>
             </div>
+
+            <div class="areas-title"><h1>Agenda: reserva tu cita online</h1></div>
         <div class= "Agenda" id="Agenda">
-            <h1>Agenda</h1>
-            <h3>Reservar cita online</h3>
+            <div class="form-title-container" id="form-title-container">
+                <h3 class="openform-btn" style="cursor:pointer" onclick="openform()">Formulario de contacto</h3>   
+            </div>
             <iframe class="ag" id="ag" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ27Jw-rD8CNcxGwUUie4A0wvQe933BwNoaUmnG9Lqco7tHm1syYqZ9QrQu5D-AvN_kXKpOAdNGw?gv=true"
              ></iframe>
 
@@ -159,17 +162,16 @@
     
 
         <div class="form-parent-container">
-            <div class="form-title-container" id="form-title-container">
-                <h3>Formulario de contacto</h3>   
-            </div>
+            
 
 
-
+        <div class="formpop" id="formpop">
+            
             <div class="formContainer id=formContainer">
-      
+                
                 <div class="email">
                     <form id="formulario" action="https://formsubmit.co/jose.fandos.pgs@gmail.com" method="POST" onsubmit="sendEmail(); reset(); return false;">
-                
+                        <button class="closepop" id="closepop" onclick="closeform()">x</button>   
                     <input type="text" id="InputName" type="text" name="Nombre" placeholder="Nombre y apellidos*" required></input>
                     <input type="email" name="Email" id="InputEmail" type="text" name="Email" placeholder="Email*" required></input>
                     <input type="number" id="InputTel" type="text" name="Teléfono" placeholder="Teléfono"></input>
@@ -196,7 +198,6 @@
                 </div>
             </div>
         </div>
-   
-<br><br><br><br><br>
+    </div>
 </body>
 </html>
