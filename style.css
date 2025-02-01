@@ -644,14 +644,16 @@ display: none;
 .closepop {
     
     display: block;
-    position: relative;
-    align-self: block-end;
+    position: block;
+    align-self: right;
+    margin: 0rem;
     top: 0rem;
-    background-color: red;
+    background-color: rgb(167, 0, 0);
     color: white;
     line-height: 1rem;
     text-align: center;
     border: none;
+    float: right;
 
 }
 
@@ -722,10 +724,10 @@ display: none;
     align-items: center;
     display: flex;
     margin: 0rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: static;
+    translate: 0% 50%;
+
+ 
        
 }
 
@@ -759,6 +761,8 @@ display: none;
 
     border: none;
     border-bottom: 0.2rem solid var(--primary-txt-color);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     font-size: large; 
