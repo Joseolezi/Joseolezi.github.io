@@ -529,16 +529,16 @@ li:hover {
  
 .areasli:hover {
     background: var(--highlight-color);
-    scale: 1.1;
+    transform: scale(1.1);
     filter: drop-shadow(0.4rem 0.4rem 1rem black);
     
 } 
 
-.areasli:active {
-transform: scale(0.9);
+.areas li:active {
+transform: scale(1);
 
 }
-.areaslipride:active{}
+
 
 .areaslipride:hover {
     background: var(--pride-gradient);
@@ -684,7 +684,6 @@ display: none;
     line-height: 1.5rem;
     max-width: 20rem;
     min-height: 1.5rem;
-    
     margin-top: 1rem;
     margin-bottom: 0rem;
     padding: 1rem;
@@ -713,8 +712,6 @@ display: none;
     margin: 0rem;
     text-decoration: underline;
     margin-bottom: 0.5rem;
-   
-
 
 }
 
