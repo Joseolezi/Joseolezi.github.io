@@ -17,7 +17,7 @@ function closepop() {
 function openform () {
 
     document.getElementById("formpop")
-    formpop.style.display="block";
+    formpop.style.display="inline";
 }
 
 function closeform () {

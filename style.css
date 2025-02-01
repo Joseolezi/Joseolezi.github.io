@@ -720,12 +720,10 @@ display: none;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin: 0rem;
+    margin-top: 1rem;
     position: static;
-    translate: 0% 50%;
+    overflow: scroll;
 
- 
-       
 }
 
 
@@ -758,8 +756,8 @@ display: none;
 
     border: none;
     border-bottom: 0.2rem solid var(--primary-txt-color);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     font-size: large; 
