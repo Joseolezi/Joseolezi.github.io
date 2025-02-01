@@ -445,8 +445,9 @@ li:hover {
 
 }
 .areas {
-    margin-top: 1.5rem;
-    padding-top: 2rem;
+    margin-top: 1.5rem !important;
+    margin: 0rem;
+    padding: 2rem;
     max-width: 1300px;
     scroll-margin-top: 11rem;
     height: min-content;
@@ -456,7 +457,7 @@ li:hover {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    justify-content: center;
+    justify-content: stretch;
    
 
 }
