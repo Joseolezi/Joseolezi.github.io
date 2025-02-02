@@ -17,13 +17,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200&icon_names=favorite,home,search,settings" rel="stylesheet" />
     <script src="main.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script> 
+
+    
 </head>
 
 
 <section class="menu" id="menu">
 
     <div class="close-icon-cont">
-        <img class="close-icon" src="Images/collapse.svg" alt="" onclick="closeMenu()">
+        <img class="close-icon" id="close-icon-d" src="Images/start-arrow-d.svg" style="rotate:180deg" alt="" onclick="closeMenu()">
+        <img class="close-icon" id="close-icon-l" src="Images/start-arrow-l.svg" style="rotate:180deg;display:none" alt="" onclick="closeMenu()">
+        
     </div>
     <div class="menu-body">
 
@@ -41,7 +45,14 @@
     <header class="header" > 
         <nav class=navbar id="navbar">    
             
-            <h1><img class= "menu-icon" src="Images/menu.svg" onclick="openM()" alt="" >Jose Fandos</h1>
+            <h1><img class= "menu-icon" id="menu-icon-d" tag="d" src="Images/menu-d.svg" onclick="openM()" alt="" >
+                <img class= "menu-icon" id="menu-icon-l" tag="l" style="display:none" src="Images/menu-l.svg" onclick="openM()" alt="" >
+                Jose Fandos
+                <div class= "toggle-theme-btn" id="toggle-theme-btn" onclick="toggleTheme()">
+                <svg class="dark-icon" id="dark-icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#0b5a6e"><path d="M482.91-173.5q-127.74 0-217.08-89.42-89.33-89.42-89.33-217.17 0-112.41 71.02-196.41T425-782h-3q-13.5 28-20.75 58.75T394-660.19q0 112.4 78.46 190.79Q550.92-391 663-391q32.38 0 62.86-7.29 30.48-7.3 58.14-20.71v-3q-20.5 106.46-104.59 177.48t-196.5 71.02Z"/></svg>
+                <svg class="light-icon" style="display:none" id="light-icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#fcffdf"><path d="M480.06-333.5q-61.56 0-104.06-42.59-42.5-42.58-42.5-104 0-61.41 42.59-104.16 42.58-42.75 104-42.75 61.41 0 104.16 42.69T627-480.06q0 61.56-42.69 104.06t-104.25 42.5ZM199-467.5H67.5V-493H199v25.5Zm694 0H761.5V-493H893v25.5Zm-425.5-294V-893H493v131.5h-25.5Zm0 694V-199H493v131.5h-25.5ZM274-670l-80.5-78 17.5-19.5 80 79.5-17 18Zm475 477.5L670-272l16-18.5 80.5 78.5-17.5 19.5ZM670-686l78-80.5 19.5 17.5-79.5 79.5-18-16.5ZM192.5-211l79.5-79.5 16.5 16.5-77 81-19-18Z"/></svg>
+                </div>
+            </h1>
             <h3>PSICOLOGO GENERAL SANITARIO</h3>
             <div class="navbar-container">  
                 <ul>
@@ -54,8 +65,10 @@
 
     </header>
     
-    <a href="#Inicio"><img class="main-img" src="Images/lotus.jpg" alt="">
-    </main-img>  
+    <a href="#Inicio"><div class="main-imgs">
+        <img class="main-imgl" id="main-imgl" src="Images/lotus.jpg" alt="">
+        <img class="main-imgd" id="main-imgd" style="display:none" src="Images/lotus-night.jpg" alt="">
+    </div>  
         
             <div class="inicio-container">
             <section class="Inicio" id="Inicio">
@@ -130,34 +143,34 @@
                         <li class="areasli">
                             <img class="area-img-a" src="Images/infinitea.png" alt="">
                             <img class="area-img-b" src="Images/infinite-color.png" alt="" style="display:none"></img>    
-                            <h4>tea</h4><p> <br></p></li>
+                            <h4 id="regular">tea</h4><p> <br></p></li>
                         <li class="areasli">
                             <img class="area-img-a" src="Images/adhd.png" alt="">
                             <img class="area-img-b" src="Images/adhd-color.png" alt="" style="display:none"></img>    
-                            <h4>tdah</h4><p> <br></p></li>
+                            <h4 id="regular">tdah</h4><p> <br></p></li>
                         <li class="areasli">
                             <img class="area-img-a" src="Images/heart.png" alt="">
                             <img class="area-img-b" src="Images/heart-red.png" alt="" style="display:none"></img>                                
-                            <h4>estado de ánimo</h4><p class="areastxt">ansiedad, tristeza, ira...</p></p></li>
+                            <h4 id="regular">estado de ánimo</h4><p class="areastxt">ansiedad, tristeza, ira...</p></p></li>
                         <li class="areasli">
                             <img class="area-img-a" src="Images/medal.png" alt="">
                             <img class="area-img-b" src="Images/medal-gold.png" alt="" style="display:none"></img>                                
-                            <h4>alto rendimiento</h4><p><br></p></li>
+                            <h4 id="regular">alto rendimiento</h4><p><br></p></li>
                         <li class="areasli">
                             <img class="area-img-a" src="Images/health.png" alt="">
                             <img class="area-img-b" src="Images/health-green.png" alt="" style="display:none"></img>    
-                            <h4>psicología de la salud</h4></li></img>    
+                            <h4 id="regular">psicología de la salud</h4></li></img>    
                         <li class="areasli">
                             <img class="area-img-a" src="Images/psi.png" alt=""></img>    
                             <img class="area-img-b" src="Images/psi-pink.png" alt="" style="display:none"></img>                                
-                            <h4>charlas de psicología</h4></li>
+                            <h4 id="regular">charlas de psicología</h4></li>
                         <li class="areaslipride">
                             <img class="area-img-a" src="Images/mf.png" alt=""></img>                          
                             <h4 id=prideh>identidad y orientación</h4></li>
                         <li class="areasli">
                             <img class="area-img-a" src="Images/psi.png" alt=""></img>    
                             <img class="area-img-b" src="Images/psi-pink.png" alt="" style="display:none"></img>                                
-                            <h4>consultoría</h4>
+                            <h4 id="regular">consultoría</h4>
                             <p class="areastxt"></p>
                         </li>    
                     </section>
