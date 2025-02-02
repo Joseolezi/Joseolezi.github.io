@@ -18,13 +18,30 @@
     <script src="main.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script> 
 </head>
-</a>
+
+
+<section class="menu" id="menu">
+
+    <div class="close-icon-cont">
+        <img class="close-icon" src="Images/collapse.svg" alt="" onclick="closeMenu()">
+    </div>
+    <div class="menu-body">
+
+    <h3>Elemento 1
+    </h3>
+
+    </div>
+
+
+
+</section>
+
 <body>
     
     <header class="header" > 
         <nav class=navbar id="navbar">    
             
-            <h1>Jose Fandos</h1>
+            <h1><img class= "menu-icon" src="Images/menu.svg" onclick="openM()" alt="" >Jose Fandos</h1>
             <h3>PSICOLOGO GENERAL SANITARIO</h3>
             <div class="navbar-container">  
                 <ul>
@@ -121,7 +138,7 @@
                         <li class="areasli">
                             <img class="area-img-a" src="Images/heart.png" alt="">
                             <img class="area-img-b" src="Images/heart-red.png" alt="" style="display:none"></img>                                
-                            <h4>estado de ánimo</h4><p>ansiedad, tristeza, ira...</p></p></li>
+                            <h4>estado de ánimo</h4><p class="areastxt">ansiedad, tristeza, ira...</p></p></li>
                         <li class="areasli">
                             <img class="area-img-a" src="Images/medal.png" alt="">
                             <img class="area-img-b" src="Images/medal-gold.png" alt="" style="display:none"></img>                                
@@ -140,8 +157,8 @@
                         <li class="areasli">
                             <img class="area-img-a" src="Images/psi.png" alt=""></img>    
                             <img class="area-img-b" src="Images/psi-pink.png" alt="" style="display:none"></img>                                
-                            <h4>derivación profesional</h4>
-                            <p>asesoría para la derivación interdisciplinar e integral a los profesionales especializados más adecuados en función del caso</p>
+                            <h4>consultoría</h4>
+                            <p class="areastxt"></p>
                         </li>    
                     </section>
                 </div>

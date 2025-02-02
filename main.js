@@ -16,13 +16,26 @@ function closepop() {
   
 function openform () {
 
-    document.getElementById("formpop")
+    document.getElementById("formpop");
     formpop.style.display="flex";
 }
 
 function closeform () {
 
-    document.getElementById("formpop")
+    document.getElementById("formpop");
     formpop.style.display="none";
 
+}
+
+function openM() {
+
+    document.getElementById("menu");
+    menu.style.display="block";
+
+}
+
+function closeMenu() {
+
+    document.getElementById("menu");
+    menu.style.display="none";
 }
