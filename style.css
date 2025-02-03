@@ -149,7 +149,7 @@ header {
 
 body {
     
-    font-family: Work Sans, sans-serif;
+    font-family: Poppins, sans-serif;
     
     margin: 0rem;
     padding: 0rem;
@@ -464,7 +464,7 @@ li:hover {
     content: '';
     height: 0.3rem;
     width: 0rem;
-    bottom: 0;
+    bottom: 0.25rem;
     left: -5rem;
     position: absolute;
     background: var(--highlight-color);
@@ -717,7 +717,7 @@ display: none;
     background-color: var(--area-bg-color);
     color: var(--area-txt-color);
     line-height: 1.5rem;
-    max-width: 20rem;
+    max-width: 22rem;
     min-height: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 0rem;
