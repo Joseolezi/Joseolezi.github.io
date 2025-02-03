@@ -86,7 +86,7 @@
     --Maya-blue: #6cc4ff;
 
     --primary-t-color: #fcffdf6b;
-    --area-bg-color: #fcffdf;
+    --area-bg-color: white;
     --area-hl-txt: #0b5a6e;
     --area-txt-color: #0b5a6e;
     --primary-txt-color: var(--Serene-blue);
@@ -498,17 +498,17 @@ li:hover {
         margin-bottom: 2rem;
         margin-right: 1rem;
         margin-left: 1rem;
-        border: 0.01rem solid var(--primary-txt-color);
+        border-bottom: 0.01rem solid var(--primary-txt-color);
         border-radius: 0.4rem;
         text-align: center;
-        align-content: flex;
-        justify-content: center;
+        
+        
         line-height: 1rem;
         transition: ease;
         transition-duration: 0.5s;
         cursor:default;
         max-height: min-content; 
-        filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+        filter: drop-shadow(0.1rem 0.1rem 0.2rem black);
         font-variant: small-caps;
         
     } 
@@ -530,7 +530,8 @@ transform: scale(1);
 
 
 .areaslipride:hover {
-    background: var(--pride-gradient);
+    background-image: url("Images/progress-pride-flag.png");
+    background-size:cover;
     transform: scale(1.1);
     filter: drop-shadow(0.4rem 0.4rem 1rem black);
     
@@ -542,7 +543,7 @@ transform: scale(1);
 
 .areaslipride:hover #prideh {
 
-    color: var(--primary-bg-color)!important;
+    display: none;
    
 }
 
@@ -559,6 +560,8 @@ transform: scale(1);
 
     filter: drop-shadow(0.4rem 0.2rem 0.4rem rgb(170, 0, 147));
 }
+
+
 
 .areasli:hover .area-img-a {
 
@@ -753,14 +756,28 @@ display: none;
 .formContainer input {
 
     border: none;
-    border-bottom: 0.2rem solid var(--primary-txt-color);
+    border-bottom: 0.2rem solid var(--highlight-color);
     margin-top: 0.1rem;
     margin-bottom: 0.1rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     font-size: large; 
     outline: none; 
+    background-color: var(--primary-bg-color);
+    color: var(--primary-txt-color);
+   
+    
+
 }
+::placeholder {
+    color: var(--primary-txt-color);
+    opacity: 0.5;
+}
+
+::-ms-input-placeholder {
+    color: var(--primary-txt-color);
+}
+
 .formContainer select {
     min-width: 14rem;
     max-width: 200px;
@@ -789,12 +806,14 @@ display: none;
     margin: 0.5rem;
     margin-top: 0rem;
     padding: none;
-    border-color: var(--primary-txt-color);
+    background-color: var(--primary-bg-color);
+    border-color: var(--highlight-color);
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     resize: none;
     align-self: stretch;
     border-radius: 0.2rem;
+    color: var(--primary-txt-color);
 
 }
 
@@ -806,6 +825,14 @@ display: none;
     margin-bottom: 0rem;
     margin-top: 1rem;
 }
+
+select {
+
+    color: var(--primary-txt-color);
+    background-color: var(--primary-bg-color);
+    height: 1.5rem;
+}
+
 .btn {
     border: none !important;
     cursor: pointer; 
@@ -828,6 +855,10 @@ display: none;
 .btn:active {
     scale: 90%;
     
+}
+
+.nota {
+    color: var(--primary-txt-color) !important;
 }
 .consulta-container {
 
