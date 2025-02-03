@@ -186,7 +186,7 @@ body {
     object-fit: cover; 
     width: 100%;
     min-height: 30rem;
-    max-height:50rem; 
+    max-height:55rem; 
     background-size: cover;
 
     
@@ -251,7 +251,8 @@ body {
     line-height: 1.5rem;
     min-width: 250px;
     min-height: 1.5rem;
-    padding-top: 0rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
     margin-top: 0rem;
     margin-bottom: 0.2rem;
     
@@ -464,7 +465,7 @@ li:hover {
     height: 0.3rem;
     width: 0rem;
     bottom: 0;
-    left: 0;
+    left: -5rem;
     position: absolute;
     background: var(--highlight-color);
     transition: ease-in-out 500ms;
@@ -474,7 +475,7 @@ li:hover {
 
 
 
-.title-band:hover #areas-title h1::after {width: 20rem;}
+.title-band:hover #areas-title h1::after {width: 25rem;}
 
 
 .areas {
@@ -490,8 +491,6 @@ li:hover {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    
-    
     align-content: center;
     justify-content: center;
    
@@ -532,11 +531,10 @@ li:hover {
         background: var(--area-bg-color);
         padding: 0rem;
         padding-bottom: 0.5rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
         margin-right: 1rem;
         margin-left: 1rem;
-        
         border-radius: 0.4rem;
         text-align: center;
         line-height: 1rem;
@@ -585,8 +583,8 @@ transform: scale(1);
 
 .areasli img, .areaslipride img {
 
-    margin-top: -6rem;
-    margin-bottom: -3rem;
+    margin-top: -4rem;
+    margin-bottom: 0rem;
     filter: drop-shadow(0.4rem 0.2rem 0.4rem black);
     transition-duration: 0.5s;
 
@@ -653,8 +651,8 @@ display: none;
     border-radius: 2rem;
     margin: 0rem;
     padding: 0;
-    min-height: 820px;
-    max-height: 2000px;
+    min-height: 60rem;
+   
 
 }
 
@@ -943,7 +941,7 @@ select {
    
     align-self: flex-end;
     position: absolute;
-    filter: drop-shadow(0.5rem 0.5rem 1.5rem black);
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
 
         animation: fade-in ease-in;
         animation-duration: 0.2;
@@ -982,6 +980,7 @@ select {
 .biobtn2:hover {
 
     background-color: var(--highlight-color);
+    color: var(--primary-txt-color);
     cursor: pointer;
 
 }
