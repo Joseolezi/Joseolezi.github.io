@@ -429,16 +429,53 @@ li:hover {
 
 }
 
-.areas-title h1 {
+.title-band {
+
     margin: 0rem;
     padding: 0.8rem;
+    padding-bottom: 1rem;
     color: var(--primary-bg-color);
     background-color: var(--primary-txt-color);
-    filter: drop-shadow(0rem 0.2em 0.2rem black);
+    filter: drop-shadow(0rem 0.2rem 0.2rem black);
     transition-duration: 0.5s;
     border: none;
+    align-content: center;
+    justify-content: center;
 
 }
+
+.areas-title h1 {
+    margin: 0rem;
+    padding: 0.5rem;
+    
+    color: var(--primary-bg-color);
+    background-color: none;
+    display:block;
+    transition-duration: 0.5s;
+    border: none;
+    position: relative;
+    align-self: center;
+    display: ruby;
+
+}
+
+.areas-title h1::after,.areas-title h1:hover::after  {
+    content: '';
+    height: 0.3rem;
+    width: 0rem;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: var(--highlight-color);
+    transition: ease-in-out 500ms;
+   
+
+}
+
+
+
+.title-band:hover #areas-title h1::after {width: 20rem;}
+
 
 .areas {
     margin-top: 1.5rem !important;
