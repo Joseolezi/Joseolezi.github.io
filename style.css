@@ -75,10 +75,6 @@
     }
 }
 
-
-
-
-
 :root{
     --CatPolygreen: #283d1e;
     --Light-yellow: #fcffdf;
@@ -408,7 +404,7 @@ li:hover {
     background: var(--primary-bg-color);
     padding: 0.5rem;
     padding-top: 4rem;
-    padding-bottom: 8rem;
+    padding-bottom: 1rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
     margin-right: 0rem;
@@ -843,6 +839,7 @@ display: none;
     padding: 0rem;
 }
 .centercontainer {
+    padding-top: 8rem !important;
     overflow: clip;
     display: flex;
     align-items: center;
@@ -1021,11 +1018,6 @@ margin: 0rem;
 padding: 0rem;
 display: none;
 border-right: 0.5rem solid var(--primary-txt-color)
-
-
-
-
-
 }
 
 .menu-icon {
