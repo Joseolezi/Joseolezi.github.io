@@ -49,16 +49,16 @@
   @keyframes intro-in {
     0% {
         transform: scale(0.01);
-        opacity: 1;
+        opacity: 0.5;
     }
     75% {
         transform: scale(1.1);
-        opacity: 1;
+        opacity: 0.7;
     }
 
     100% {
         transform: scale (1);
-        opacity: 1;
+        opacity: 0.7;
     }
   }
 
@@ -231,18 +231,19 @@ body {
 
 .main-txt-cont {
     
-    float: center;
+   
     text-decoration: small-caps;
     margin-top: 20rem;
     padding-top: 0rem;
     padding-left: 1rem;
     padding-right: 1rem;
     position:absolute;
-    max-width: 30rem;
+    
     align-self: center;
     align-content: center;
     top:0rem;
-    left: 20rem;
+    left: 0rem;
+    right: 0rem;
     font-variant: small-caps;
     display:block;
   
@@ -283,6 +284,7 @@ body {
     border-radius: 1rem;
     filter: drop-shadow(0.1rem 0.1rem 0.2rem black);
     float: center;
+
     animation-delay: 1s!important ;
     animation: intro-in 0.8s ease-out;
     animation-fill-mode: forwards;
