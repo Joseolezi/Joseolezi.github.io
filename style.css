@@ -491,10 +491,7 @@ a {
 }   
 
 
-a:hover {
-    color:var(--primary-bg-color);
-    
-}
+
 
 li {
     color: var(--primary-txt-color);
@@ -1213,6 +1210,7 @@ border-right: 0.5rem solid var(--primary-txt-color)
 .close-icon-cont {
     
     margin-top: 2rem; 
+    margin-bottom: 2rem;
     padding-right: 1rem;
     display: flex;
     flex-direction: row-reverse;
@@ -1231,14 +1229,19 @@ border-right: 0.5rem solid var(--primary-txt-color)
 .menu-body {
 
     padding-left: 2.5rem;
+    display: block;
+    justify-content: space-evenly;
 }
 
 
-.menu h3 {
+.menu-h3 {
+    text-align: justify;
+    font-weight: 500;
+}
 
-text-align: justify;
-font-weight: 500;
+.menu-h3:hover {
 
+  text-decoration: underline;
 }
 
 .toggle-theme-btn {

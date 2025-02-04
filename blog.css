@@ -1,0 +1,256 @@
+:root{
+    --CatPolygreen: #283d1e;
+    --Light-yellow: #fcffdf;
+    --Heavy-yellow: #dbe0ae;
+    --Pink-lavender: #ffcaf6;
+    --Aquamarine: #c1ffe4;
+    --Serene-blue: #0b5a6e;
+    --Nature-green: #009600;
+    --Maya-blue: #6cc4ff;
+
+    --primary-t-color: #fcffdf6b;
+    --area-bg-color: #ffffff;
+    --area-hl-txt: #0b5a6e;
+    --area-txt-color: #0b5a6e;
+    --primary-txt-color: var(--Serene-blue);
+    --secondary-txt-color: #004f63;
+    --primary-bg-color: var(--Light-yellow);
+    --secondary-bg-color: #ffffff;
+    --hover-color: var(--Light-yellow);
+    --dark-highlight-color: #b638a1;
+    --highlight-color: var(--Pink-lavender);
+    --primary-light-color: var(--Maya-blue);
+    --vertical-dtol-gradient: linear-gradient(
+        0deg, rgba(252,255,223,1)0%, #6cc4ff 75%,  #6cc4ff 100%); 
+    --gradient-v-white-to-bg: linear-gradient(
+       0deg, var(--primary-bg-color)50%, rgba(0,0,0,0) 100%);
+    
+    --translucent: rgba(252, 255, 223, 0.5);
+       --pride-gradient: linear-gradient(180deg,
+        rgba(228, 3, 3, 1) 0%,
+        rgba(255, 140, 0, 1)20%,
+        rgba(255, 237, 0, 1)40%,
+        rgba(0, 128, 38, 1)60%,
+        rgba(0, 76, 255, 1)80%,
+        rgba(115, 41, 130, 1)100%;
+       
+    );
+   
+}
+
+html {scroll-behavior: smooth}
+
+body {
+    
+    font-family: Poppins, sans-serif;
+    
+    margin: 0rem;
+    padding: 1rem;
+    position: relative;
+    justify-content: flex;
+    text-align: center;
+    line-height: 0.5;
+    font-weight:normal;
+    font-style: normal;
+    cursor: default;
+    
+    background: var(--primary-txt-color);
+}
+
+a {
+
+    color: var(--primary-txt-color);
+    text-decoration: none;
+    text-align: center;
+    margin:  0rem 0rem;
+    cursor: pointer;
+    transition: ease-in
+
+}
+
+p {
+
+    line-height: 1rem;
+    color: var(--primary-txt-color);
+}
+
+h2 {
+    font-family: Poppins, sans-serif;
+    color: var(--primary-txt-color);
+    line-height: 3.5rem;
+    margin: 0rem;
+   
+}
+
+.menu-h3 {
+    font-family: Poppins, sans-serif;
+    color: var(--primary-txt-color);
+    line-height: 2.5rem;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem !important;
+    font-size: 1.5rem;
+    left:0; 
+}
+
+.menu-h3:hover {
+
+  text-decoration: underline;
+}
+.portrait-cont {
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  
+  
+}
+
+.portrait-img {
+
+  max-width: 12rem;
+  position: relative;
+  
+}
+
+h5 {
+    font-family: Poppins, sans-serif;
+    color: var(--primary-txt-color);
+    line-height: 0.5rem;
+
+}
+
+.menu {
+    z-index: 3;
+    background-color: var(--primary-bg-color);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 15rem;
+    max-width: 25rem;
+    height: 100vh;
+    position: fixed;
+  
+    margin: 0rem;
+    padding: 0rem;
+    display: none;
+    border-right: 0.5rem solid var(--primary-txt-color);
+    }
+    
+    .menu-icon {
+       
+        float: left;
+        cursor: pointer;
+        margin: 0rem;
+        padding-left: 0.5rem;
+        position:sticky;
+        
+    
+    }
+    
+    .close-icon-cont {
+        
+        margin-top: 2rem; 
+        margin-bottom: 2rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: flex-start;
+        cursor: pointer;
+    }
+    
+    
+    
+    .close-icon {
+    
+        position: end;
+        color: indigo;
+    }
+    
+    .menu-body {
+    
+        padding-left: 2.5rem;
+        display: block;
+        justify-content: space-evenly;
+    }
+    
+    
+    .menu h3 {
+    
+    text-align: justify;
+    font-weight: 500;
+    
+    }
+.toggle-theme-btn {
+    z-index: 3;
+    float: right;
+    cursor: pointer;
+    margin: 0rem;
+    padding-right: 0.5rem;
+    position:sticky;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: var(--primary-bg-color);
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: var(--primary-bg-color);
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
