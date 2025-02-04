@@ -46,6 +46,22 @@
     }
   }
 
+  @keyframes intro-in {
+    0% {
+        transform: scale(0.01);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale (1);
+        opacity: 1;
+    }
+  }
+
 @keyframes desenfocar {
     from {
       filter: blur(0rem);
@@ -72,6 +88,30 @@
     }
     to {
         background-color: var(--primary-txt-color);
+    }
+}
+
+@keyframes intro-up {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+@keyframes intro-zoom {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem) scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0rem) scale(1);
     }
 }
 
@@ -167,8 +207,6 @@ body {
     transition-duration: 0.5s;
 }
 
-
-
 .main-imgl, .main-imgd {
     padding: 0rem;
     margin: 0rem;
@@ -186,26 +224,97 @@ body {
     object-fit: cover; 
     width: 100%;
     min-height: 30rem;
-    max-height:55rem; 
-    background-size: cover;
+    max-height:60rem; 
+    background-size: cover;   
+    position: relative;
+}
 
+.main-txt-cont {
     
+    float: center;
+    text-decoration: small-caps;
+    margin-top: 20rem;
+    padding-top: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position:absolute;
+    max-width: 30rem;
+    align-self: center;
+    align-content: center;
+    top:0rem;
+    left: 20rem;
+    font-variant: small-caps;
+    display:block;
+  
+}
+
+.big-txt h1 {
+
+    opacity: 0;
+    color: var(--primary-txt-color);
+    font-size: 4rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    margin:0rem;
+    padding: 0rem;
+    margin-bottom: 1rem !important;
+    animation-delay: 1.5s!important;
+    animation: intro-up 1.5s ease-out;
+    animation-fill-mode: forwards;
     
 }
 
+.reservar-btn {
+   
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-txt-color);
+    color: var(--primary-bg-color);
+    line-height: 1rem;
+    min-width: 6rem;
+    min-height: 1.5rem;
+    padding: 1rem;
+    margin: 0rem;
+    font-size: 2.5rem;
+    cursor:pointer;
+    transition: ease;
+    transition-duration: 1s;
+    border-radius: 1rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.2rem black);
+    float: center;
+    animation-delay: 1s!important ;
+    animation: intro-in 0.8s ease-out;
+    animation-fill-mode: forwards;
+}
+.reservar-btn:hover {
+
+    color: var(--primary-txt-color);
+    background-color: var(--highlight-color);
+    filter: drop-shadow(0rem 0rem 0rem) !important;
+}
+
+.reservar-btn:active {
+
+    transform: scale(0.95) !important;
+}
+
+
+
 .header h1 {
+    
     color: var(--primary-txt-color);
     font-style: normal;
     padding-top: 1rem;
     margin: 0rem;
     margin-bottom: 0rem;
-    font-weight: 1em;
-    font-size: 2em;
-    line-height: 1;
-    
+    font-weight: 1rem;
+    font-size: 3rem;
+
     
 }
 .header h3 {
+    
     font-variant: small-caps;
     font-style:normal;
     color: var(--primary-txt-color);
@@ -219,6 +328,7 @@ body {
     text-decoration-style: solid;
     text-underline-offset: 0.4rem;
     line-height: 1.8rem;
+   
 }
 
 /** navbar style **/
@@ -243,7 +353,7 @@ body {
 }
 
 .navbar a {
-
+ 
     display: flex;
     justify-content: center;
     background-color: var(--primary-txt-color);
@@ -260,6 +370,7 @@ body {
     transition: ease;
     transition-duration: 0.5s;
     border-radius: 5px;
+ 
 }
 
 .navbar a:hover {
@@ -270,7 +381,7 @@ body {
 
 .navbar a:active {
     color: var(--primary-bg-color);
-    
+    transform: scale(0.95) !important;
     
 }
 
@@ -412,9 +523,9 @@ li:hover {
     margin-left: 0rem;
     text-align: center;
     line-height: 0.5rem;
-    max-height: min-content;
+    
     align-items: center;
-    text-align: center;         
+    text-align: center;  
 }
 
 /* Estilo para areas */	
@@ -1087,6 +1198,7 @@ border-right: 0.5rem solid var(--primary-txt-color)
 }
 
 .menu-icon {
+    z-index: 3;
     float: left;
     cursor: pointer;
     margin: 0rem;
@@ -1128,7 +1240,7 @@ font-weight: 500;
 }
 
 .toggle-theme-btn {
-
+    z-index: 3;
     float: right;
     cursor: pointer;
     margin: 0rem;

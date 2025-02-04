@@ -6,7 +6,8 @@ let formpop = document.getElementById("formpop");
 let popen = document.getElementById("popen");
 let popclose = document.getElementById("popclose");
 let toggleThemeBtn = document.getElementById("toggle-theme-btn");
-
+const now = new Date();
+let hour = now.getHours();
 document.addEventListener("DOMContentLoaded", function() {
     popupOverlay = document.getElementById("popupOverlay");
     formpop = document.getElementById("formpop");
@@ -20,11 +21,27 @@ document.addEventListener("DOMContentLoaded", function() {
     menuIconD = document.getElementById('menu-icon-d');
     arrowD = document.getElementById('close-icon-d');
     arrowL = document.getElementById('close-icon-l');
+    mainT1= document.getElementById('main-xt-1');
+    mainT2= document.getElementById('main-xt-2');
+    mainT3= document.getElementById('main-xt-3');
+    mainT4= document.getElementById('main-xt-4');
+    
 });
+
+function start() {
+
+    if (hour < 19 && hour > 7) {
+        lightTheme = false;
+       
+    } else {
+        lightTheme = true;
+      
+    }
+   toggleTheme ();
+} 
 
 
 // open cv popup 
-
 
 function openpop() {
     
