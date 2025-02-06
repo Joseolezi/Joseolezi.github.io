@@ -19,6 +19,8 @@
 
 /* ANIMATIONS and root*/
 
+
+
 @keyframes animate-in {
     from {
       opacity: 0;
@@ -135,7 +137,7 @@
     --secondary-bg-color: #ffffff;
     --hover-color: var(--Light-yellow);
     --dark-highlight-color: #b638a1;
-    --highlight-color: var(--Pink-lavender);
+    --highlight-color: #b638a1;
     --primary-light-color: var(--Maya-blue);
     --vertical-dtol-gradient: linear-gradient(
         0deg, rgba(252,255,223,1)0%, #6cc4ff 75%,  #6cc4ff 100%); 

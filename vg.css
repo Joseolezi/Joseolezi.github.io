@@ -1,0 +1,73 @@
+@import url(https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css);
+
+.root {
+
+    --blue: #2c3e50
+
+
+
+}
+
+
+
+.layout {
+    width: 100%;
+}
+html {
+scroll-behavior: smooth; 
+left: 0;
+right: 0;
+display: flex;
+}
+
+.navbar {
+    background-color: var(--blue);
+}
+
+header {
+    left:0; 
+    right:0; 
+    top: 0; 
+    position: sticky;
+}
+
+
+a {
+    color: rgb(190, 190, 190);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.intro {
+    margin-top: 2rem;
+    text-align: center;
+    float: center;
+    align-self: center;
+}
+
+p {
+    align-self: center;
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+.alerta {
+
+    text-align: center;
+    background-color: rgb(143, 64, 0);
+    color: white;
+    line-height: 1rem;
+    margin: 0rem;
+
+}
+
+iframe {
+min-width: 80%;
+max-width: 50rem;
+min-height: 28.2rem;
+max-height: 28.2rem;
+
+}

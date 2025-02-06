@@ -8,6 +8,8 @@
     --Nature-green: #009600;
     --Maya-blue: #6cc4ff;
 
+
+    --page-bg-color: #0b5a6e
     --primary-t-color: #fcffdf6b;
     --area-bg-color: #ffffff;
     --area-hl-txt: #0b5a6e;
@@ -54,7 +56,7 @@ body {
     font-style: normal;
     cursor: default;
     
-    background: var(--primary-txt-color);
+    background: var(--page-bg-color);
 }
 
 a {
@@ -79,6 +81,7 @@ h1 {
     color: var(--primary-txt-color);
     line-height: 3.5rem;
     margin: 0rem;
+    font-weight: 300;
     font-size: 3rem;
    
 }
@@ -263,3 +266,46 @@ h5 {
       padding: 0;
     }
   }
+
+.scroll-list-wrp {
+
+margin-top: 1rem;
+margin-bottom: 1rem;
+width: 100%; height: 400px;
+overflow: auto; padding: 50px;
+box-shadow: 0px 7px 46px 0px rgba (0,0,0,0.3);
+background: #1c2e4a; border-radius: 8px;
+background-image: linear-gradient(157deg,
+#2e3a59 0%, #1a2b46 24%);
+
+}
+
+@keyframes slide-in {
+0% {
+  opacity: 0;
+  transform: scale(0.8);
+}
+50% {
+  opacity: 1;
+  transform: scale(1);
+}
+
+100% {
+  opacity: 0;
+  transform: scale(0.8);
+}
+}
+
+
+.item-wrp {
+  opacity: 0;
+  height: 100px;
+  background-color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  animation-name: slide-in;
+  animation-timing-function: ease-in;
+  animation-timeline: view(block 20%);
+  animation-fill-mode: both;
+
+}

@@ -94,7 +94,6 @@ function toggleTheme() {
         document.documentElement.style.setProperty('--primary-bg-color', '#fcffdf');
         document.documentElement.style.setProperty('--primary-txt-color', '#0b5a6e');
         document.documentElement.style.setProperty('--primary-bg-color', '#fcffdf');
-        document.documentElement.style.setProperty('--highlight-color', '#ffcaf6');
         document.documentElement.style.setProperty('--area-hl-txt', '#0b5a6e');
         document.documentElement.style.setProperty('--area-bg-color', '#ffffff');
         document.documentElement.style.setProperty('--primary-t-color', '#fcffdf6b');
@@ -113,7 +112,6 @@ function toggleTheme() {
        
         document.documentElement.style.setProperty('--primary-txt-color', '#fcffdf'); 
         document.documentElement.style.setProperty('--primary-bg-color', '#002933');
-        document.documentElement.style.setProperty('--highlight-color', '#b466a7');
         document.documentElement.style.setProperty('--area-hl-txt', '#fcffdf');
         document.documentElement.style.setProperty('--area-bg-color', '#fcffdf');
         document.documentElement.style.setProperty('--primary-t-color', '#0b5a6e5d');
