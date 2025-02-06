@@ -55,7 +55,7 @@
     }
     75% {
         transform: scale(1.1);
-        opacity: 0.7;
+        opacity: 0.9;
     }
 
     100% {
@@ -123,14 +123,14 @@
     --Heavy-yellow: #dbe0ae;
     --Pink-lavender: #ffcaf6;
     --Aquamarine: #c1ffe4;
-    --Serene-blue: #0b5a6e;
+    --Serene-blue: #2c3e50;
     --Nature-green: #009600;
     --Maya-blue: #6cc4ff;
 
     --primary-t-color: #fcffdf6b;
     --area-bg-color: #ffffff;
-    --area-hl-txt: #0b5a6e;
-    --area-txt-color: #0b5a6e;
+    --area-hl-txt: #2c3e50;
+    --area-txt-color: #2c3e50;
     --primary-txt-color: var(--Serene-blue);
     --secondary-txt-color: #004f63;
     --primary-bg-color: var(--Light-yellow);
@@ -256,7 +256,7 @@ body {
     opacity: 0;
     color: var(--primary-txt-color);
     font-size: 4rem;
-    line-height: 2.5rem;
+  
     font-weight: bold;
     margin:0rem;
     padding: 0rem;
@@ -268,25 +268,31 @@ body {
 }
 
 .reservar-btn {
-   
+    
+    text-align: center;
     opacity: 0;
-    display: flex;
+    max-width: 30rem;
+    display: inline;
     justify-content: center;
     background-color: var(--primary-txt-color);
     color: var(--primary-bg-color);
-    line-height: 1rem;
-    min-width: 6rem;
-    min-height: 1.5rem;
-    padding: 1rem;
+    
+    min-width: 10rem;
+    padding-right: 2.5rem;
+    padding-left: 4rem;
+    letter-spacing: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0.3rem;
     margin: 0rem;
+    margin-top: 2rem !important;
     font-size: 2.5rem;
     cursor:pointer;
     transition: ease;
     transition-duration: 1s;
     border-radius: 1rem;
     filter: drop-shadow(0.1rem 0.1rem 0.2rem black);
-    float: center;
-
+ 
+  
     animation-delay: 1s!important ;
     animation: intro-in 0.8s ease-out;
     animation-fill-mode: forwards;

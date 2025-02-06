@@ -39,10 +39,10 @@ function toggleTheme() {
         arrowL.style.display="none"; 
         arrowD.style.display="block";
         document.documentElement.style.setProperty('--primary-bg-color', '#fcffdf');
-        document.documentElement.style.setProperty('--primary-txt-color', '#0b5a6e');
-        document.documentElement.style.setProperty('--page-bg-color', '#0b5a6e');
+        document.documentElement.style.setProperty('--primary-txt-color', '#2c3e50');
+        document.documentElement.style.setProperty('--page-bg-color', '#2c3e50');
         document.documentElement.style.setProperty('--primary-bg-color', '#fcffdf');
-        document.documentElement.style.setProperty('--area-hl-txt', '#0b5a6e');
+        document.documentElement.style.setProperty('--area-hl-txt', '#2c3e50');
         document.documentElement.style.setProperty('--area-bg-color', '#ffffff');
         document.documentElement.style.setProperty('--primary-t-color', '#fcffdf6b');
 
@@ -59,7 +59,7 @@ function toggleTheme() {
         document.documentElement.style.setProperty('--primary-bg-color', '#002933');
         document.documentElement.style.setProperty('--area-hl-txt', '#fcffdf');
         document.documentElement.style.setProperty('--area-bg-color', '#fcffdf');
-        document.documentElement.style.setProperty('--primary-t-color', '#0b5a6e5d');
+        document.documentElement.style.setProperty('--primary-t-color', '#2c3e505d');
     }
 
 }
