@@ -1,5 +1,14 @@
 
 
+let popupOverlay;
+let lightIcon;
+let darkIcon;
+let mainImgL;
+let mainImgD;
+let menuIconL;
+let menuIconD;
+let arrowD;
+let arrowL;
 let lightTheme = true;
 let menu = document.getElementById("menu");
 let formpop = document.getElementById("formpop");
@@ -25,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
     mainT2= document.getElementById('main-xt-2');
     mainT3= document.getElementById('main-xt-3');
     mainT4= document.getElementById('main-xt-4');
+
+    start();
     
 });
 
@@ -119,3 +130,22 @@ function toggleTheme() {
     }
 
 }
+
+(function() {
+    const buttons = document.querySelectorAll(".btn-posnawr");
+  
+    buttons.forEach(button => {
+      ["mouseenter", "mouseout"].forEach(evt => {
+        button.addEventListener(evt, e => {
+          let parentOffset = button.getBoundingClientRect(),
+              relX = e.pageX - parentOffset.left,
+              relY = e.pageY - parentOffset.top;
+  
+          const span = button.getElementsByTagName("span");
+  
+          span[0].style.top = relY + "px";
+          span[0].style.left = relX + "px";
+        });
+      });
+    });
+  })();
