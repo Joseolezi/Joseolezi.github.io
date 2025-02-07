@@ -1261,3 +1261,8 @@ border-right: 0.5rem solid var(--primary-txt-color)
     position:sticky;
 }
 
+
+.alerta {
+    text-align: center;
+    margin: 0;
+}

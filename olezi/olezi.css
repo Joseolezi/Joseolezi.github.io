@@ -271,3 +271,13 @@ select {
     display: block;
     text-align: center;
 }
+
+.alerta {
+    text-align: center;
+    display: block;
+    position:relative;
+    margin: 0;
+    right: 0;
+    left: 0;
+
+}
