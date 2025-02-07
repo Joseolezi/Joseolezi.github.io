@@ -62,7 +62,47 @@
   </div>
 </main>
 <footer>
-<br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="formpop" id="formpop">
+  <h3 class=contacto>Contacto</h3>
+  <div class="formContainer id=formContainer">
+                
+    <div class="email">
+      
+        <form id="formulario" action="https://formsubmit.co/jose.fandos.pgs@gmail.com" method="POST" onsubmit="sendEmail(); reset(); return false;">
+          
+        <input type="text" id="InputName" type="text" name="Nombre" placeholder="Nombre y apellidos*" required></input>
+        <input type="email" name="Email" id="InputEmail" type="text" name="Email" placeholder="Email*" required></input>
+        <input type="number" id="InputTel" type="text" name="Teléfono" placeholder="Teléfono"></input>
+        <input type="hidden" id="_subject" name="_subject" value="Formulario de la web">
+        <select type="subject" id="motivo" name="Asunto">
+            
+            <option>Asunto</option>
+            <option>Apoyo</option>
+            <option>Opinión, crítica o propuesta de mejora</option>
+            <option>Información</option>
+            <option>Descargar Isla Orbe</option>
+            <option>Modificación ítems</option>
+            <option>Modificar NPCs/recorrido</option>
+            <option>Obtener medidas adicionales (output)</option>
+            <option>Solicitar un nuevo mapa/modo de juego</option>
+            <option>Solicitar el desarrollo de un juego</option>
+            <option>Propuesta comercial</option>
+            <option>Otro</option>
+        </select>
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_autoresponse" value="Copia de tu mensaje:">
+        <div class="message-container">
+            <textarea type="text" id="mensaje" name="Mensaje" placeholder="Texto*" required></textarea>
+        </div>
+        <button class="btn" id="btn" type="submit" value="Send"> Enviar*</button>
+            <p class="nota" id="nota">*Al hacer click en enviar se te redigirá al recaptcha de seguridad del servicio FormSubmit</p>
+        </form>
+
+    </div>
+  </div>
+</div>
+
 </footer>
 
 </body>
