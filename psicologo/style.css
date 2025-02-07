@@ -1263,6 +1263,7 @@ border-right: 0.5rem solid var(--primary-txt-color)
 
 
 .alerta {
+    color: var(--primary-txt-color);
     text-align: center;
     margin: 0;
 }
