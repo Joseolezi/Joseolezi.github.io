@@ -271,3 +271,7 @@ select {
     display: block;
     text-align: center;
 }
+
+li {
+    list-style-type: none;
+}
