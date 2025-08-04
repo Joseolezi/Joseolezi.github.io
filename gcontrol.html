@@ -1,46 +1,4 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Control Godot</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { background: #333; color: #fff; font-family: sans-serif; text-align: center; }
-    .btn { font-size: 2em; margin: 20px; padding: 30px 60px; }
-    #status { margin-top: 20px; font-size: 1.5em; }
-  </style>
-</head>
-<body>
-  <h1>Control Godot</h1>
-  <button class="btn" onclick="sendInput('UP')">▲</button><br>
-  <button class="btn" onclick="sendInput('LEFT')">◀</button>
-  <button class="btn" onclick="sendInput('DOWN')">▼</button>
-  <button class="btn" onclick="sendInput('RIGHT')">▶</button>
-  <div id="status">Conectando...</div>
-  <script>
-    // Cambia la IP aquí por la de tu PC:
-    const ws = new WebSocket("ws://192.168.0.13:5050");
-    const status = document.getElementById('status');
 
-    ws.onopen = function() {
-      document.body.style.background = "#0c0";
-      status.textContent = "¡Conectado!";
-    };
-    ws.onerror = function(e) {
-      document.body.style.background = "#c00";
-      status.textContent = "Error de conexión";
-    };
-    ws.onclose = function() {
-      document.body.style.background = "#666";
-      status.textContent = "Desconectado";
-    };
-    function sendInput(dir) {
-      if (ws.readyState === 1) {
-        ws.send(dir);
-      } else {
-        status.textContent = "No conectado, revisa IP y puerto";
-      }
-    }
-  </script>
-</body>
 </html>
