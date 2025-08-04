@@ -19,6 +19,26 @@
   <script>
     // CAMBIA esta IP por la de tu PC, y asegúrate de que el puerto es el mismo que usas en Godot
     const ws = new WebSocket("ws://192.168.0.13:8080");
+    <script>
+  // Cambia la IP aquí
+  const ws = new WebSocket("ws://192.168.1.42:8080");
+  ws.onopen = function() {
+    document.body.style.background = "#0c0";
+    document.body.insertAdjacentHTML('beforeend', '<p>¡Conectado!</p>');
+  };
+  ws.onerror = function(e) {
+    document.body.style.background = "#c00";
+    document.body.insertAdjacentHTML('beforeend', '<p>Error de conexión :(</p>');
+  };
+  ws.onclose = function() {
+    document.body.style.background = "#666";
+    document.body.insertAdjacentHTML('beforeend', '<p>Desconectado</p>');
+  };
+  function sendInput(dir) {
+    ws.send(dir);
+  }
+</script>
+
     function sendInput(dir) {
       ws.send(dir);
     }
