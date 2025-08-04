@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Control Godot</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <h1>Control Godot</h1>
   <button onclick="sendInput('UP')">▲</button>
+  <button onclick="sendInput('LEFT')">◀</button>
   <button onclick="sendInput('DOWN')">▼</button>
+  <button onclick="sendInput('RIGHT')">▶</button>
   <script>
     const ws = new WebSocket("ws://192.168.0.13:8080"); 
     function sendInput(dir) {
-      ws.send(dir);
+      if (ws.readyState === 1) ws.send(dir);
     }
   </script>
 </body>
