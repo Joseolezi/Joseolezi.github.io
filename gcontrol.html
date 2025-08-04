@@ -16,12 +16,8 @@
   <button class="btn" onclick="sendInput('DOWN')">▼</button>
   <button class="btn" onclick="sendInput('RIGHT')">▶</button>
 
-  <script>
-    // CAMBIA esta IP por la de tu PC, y asegúrate de que el puerto es el mismo que usas en Godot
-    const ws = new WebSocket("ws://192.168.0.13:8080");
-    <script>
-  // Cambia la IP aquí
-  const ws = new WebSocket("ws://192.168.1.42:8080");
+ <script>
+  const ws = new WebSocket("ws://192.168.0.13:8080");
   ws.onopen = function() {
     document.body.style.background = "#0c0";
     document.body.insertAdjacentHTML('beforeend', '<p>¡Conectado!</p>');
@@ -35,9 +31,14 @@
     document.body.insertAdjacentHTML('beforeend', '<p>Desconectado</p>');
   };
   function sendInput(dir) {
-    ws.send(dir);
+    if (ws.readyState === 1) {
+      ws.send(dir);
+    } else {
+      alert("No conectado. Revisa la IP y el puerto.");
+    }
   }
 </script>
+
 
     function sendInput(dir) {
       ws.send(dir);
