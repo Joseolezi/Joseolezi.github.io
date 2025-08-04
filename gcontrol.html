@@ -18,7 +18,7 @@
 
   <script>
     // CAMBIA esta IP por la de tu PC, y asegúrate de que el puerto es el mismo que usas en Godot
-    const ws = new WebSocket("ws://192.168.1.42:8080");
+    const ws = new WebSocket("ws://192.168.0.13:8080");
     function sendInput(dir) {
       ws.send(dir);
     }
