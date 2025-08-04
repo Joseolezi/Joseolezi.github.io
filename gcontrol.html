@@ -9,7 +9,7 @@
   <button onclick="sendInput('UP')">▲</button>
   <button onclick="sendInput('DOWN')">▼</button>
   <script>
-    const ws = new WebSocket("ws://192.168.1.42:8080"); // Cambia la IP a la tuya
+    const ws = new WebSocket("ws://192.168.0.13:8080"); 
     function sendInput(dir) {
       ws.send(dir);
     }
